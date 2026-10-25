@@ -131,3 +131,24 @@ h1 {
     background-color: var(--light-sage);
     transform: rotate(4deg);
 }
+
+.curl-pictures img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    background-color: var(--cream);
+    padding: 8px 8px 25px 8px;
+    border: 2px solid var(--sage-green);
+    border-radius: 6px;
+    box-shadow: 5px 6px 0 var(--sage-green);
+}
+
+.curl-pictures img:nth-child(1) {
+    transform: rotate(-5deg);
+}
+.curl-pictures img:nth-child(2) {
+    transform: rotate(3deg);
+}
+.curl-pictures img:nth-child(3) {
+    transform: rotate(-2deg);
+}
