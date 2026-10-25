@@ -294,12 +294,12 @@ h1 {
     border-radius: 4px;
     box-shadow: 5px 6px 0 var(--caramel);
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
     justify-content: center;
 }
 
 .sticky-note p {
-    margin: 5px o;
+    margin: 5px 0;
     font-family: Georgia, "Times New Roman", serif;
     font-style: italic;
     font-size: 14px;
@@ -311,11 +311,11 @@ h1 {
 }
 
 .pink-note span {
-    backgroung-color: var(--soft-pink) !important;
+    background-color: var(--soft-pink) !important;
     transform: rotate(-6deg);
 }
 
-green-note {
+.green-note {
     background-color: var(--light-sage) !important;
     transform: rotate(5deg);
 }
