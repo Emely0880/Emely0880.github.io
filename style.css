@@ -4,3 +4,24 @@ body {
     color: #4A2C20; 
     margin: 0;
 } 
+
+
+
+nav { 
+    background-color: #5C321E;
+    padding: 20px;
+    text-align: center;
+}
+nav a { 
+    color: #FFF4E6;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #EBC9A8;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+} 
