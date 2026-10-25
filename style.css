@@ -25,3 +25,14 @@ nav a:hover {
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
 } 
+ img {
+     max-width: 100%;
+     height: auto;
+     border-radius: 20px;
+
+
+h1 {
+    color: #5C321E;
+    text-align: center;
+    margin-top: 40px;
+}
