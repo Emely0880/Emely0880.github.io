@@ -275,3 +275,43 @@ h1 {
     line-height: 1.7;
     color: var(--chocolate);
 }
+
+.hair-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.sticky-note {
+    width: 120px;
+    padding: 18px 12px;
+    text-align: center;
+    color: var(--chocolate);
+    box-shadow: 4px 5px 0 var(--caramel);
+}
+
+.sticky-note p {
+    margin: 5px o;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.sticky-note span {
+    font-size: 24px;
+}
+
+.pink-note span {
+    backgroung-color:var(--soft-pink);
+    transform: rotate(-6deg);
+}
+
+green-note {
+    background-color: var(--light-sage);
+    transform: rotate(5deg);
+}
+
+    
