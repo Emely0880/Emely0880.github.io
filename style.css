@@ -25,10 +25,14 @@ nav {
     border-bottom: 4px solid var(--soft-pink);
 }
 nav a { 
-    color: #FFF4E6;
+    color: var(--chocolate);
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 10px;
+    padding: 10px 18px;
     font-weight: bold;
+    border-radius: 18px;
+    display: inline-block;
+    transition: 0.3s;
 }
 nav a:hover {
     color: #EBC9A8;
