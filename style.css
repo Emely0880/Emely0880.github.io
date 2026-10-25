@@ -1,5 +1,5 @@
 body { 
-    backgrounf-color: #FFF4E6; 
+    background-color: #FFF4E6; 
     font-family: Arial, sans-serif;
     color: #4A2C20; 
     margin: 0;
@@ -37,4 +37,7 @@ h1 {
     color: #5C321E;
     text-align: center;
     margin-top: 40px;
+}
+body {
+    bacground-color: pink;
 }
