@@ -10,7 +10,7 @@
 } 
 
 body { 
-    background-color: #FFF4E6; 
+    background-color: #FFF4E6;
     font-family: Arial, sans-serif;
     color: #4A2C20; 
     margin: 0;
@@ -19,9 +19,10 @@ body {
 
 
 nav { 
-    background-color: #5C321E;
-    padding: 20px;
+    background-color: var(--cream);
+    padding: 22px;
     text-align: center;
+    border-bottom: 4px solid var(--soft-pink);
 }
 nav a { 
     color: #FFF4E6;
