@@ -29,8 +29,8 @@ nav a:hover {
      max-width: 400px;
      height: auto;
      border-radius: 20px;
-     display: blocks;
-     margins: 20px auto;
+     display: block;
+     margin: 20px auto;
  }
 
 h1 {
