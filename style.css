@@ -70,3 +70,12 @@ h1 {
     margin-bottom: 20px;
     text-shadow: 3px 3px 0 var(--soft-pink);
 }
+
+.home-section img {
+    background-color: white;
+    padding: 12px 12px 35px 12px;
+    border: 2px solid var(--light-sage);
+    border-radious: 8px;
+    box-shadow: 7px 7px 0 var(--sage-green);
+    transform: rotate(-2deg);
+}
