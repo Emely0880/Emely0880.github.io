@@ -264,3 +264,11 @@ h1 {
     color:var(--caramel);
     transform: rotate(-8deg);
 }
+
+.home-section > p:not(.mini-label) {
+    font-family: Georrgia, "Times New Roman", serif;
+    font-style: italicc;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--chocolate);
+}
