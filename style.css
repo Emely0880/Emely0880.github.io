@@ -188,3 +188,36 @@ h1 {
     color: var(--warm-brown);
     transform: rotate(15deg);
 }
+
+.curl-pictures {
+    position: relative;
+    padding: 25px 15px;
+
+}
+
+.curl-pictres::before {
+    content: "";
+    position: abosolute;
+    width: 75%;
+    height: 75%;
+    background-color: var(--light-sage);
+    border-radius: 35% 20% 30% 15%;
+    transform: rotate(-3deg);
+    z-index: 0;
+}
+
+.curl-pictures::after {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 70%;
+    background-color: var(--cream);
+    border: 2px dashed var(--caramel);
+    transform: rotate(4deg);
+    z-index: 0;
+}
+
+.curl-pictures img {
+    position: relative;
+    z-index: 2;
+}
