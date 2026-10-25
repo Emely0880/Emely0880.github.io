@@ -78,4 +78,6 @@ h1 {
     border-radious: 8px;
     box-shadow: 7px 7px 0 var(--sage-green);
     transform: rotate(-2deg);
+    wide: 280px;
+    max-width: 80%;
 }
