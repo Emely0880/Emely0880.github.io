@@ -53,3 +53,12 @@ h1 {
     text-align: center;
     margin-top: 40px;
 }
+.home-section {
+    background-color: #FFFDF7;
+    max-width: 850px;
+    margin: 45px auto;
+    padding: 45px;
+    border-radius: 28px;
+    border: 2px solid var(--war-brown);
+    box-shadow: 8px 8px 0 var(--soft-pink);
+}
