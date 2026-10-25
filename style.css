@@ -286,10 +286,16 @@ h1 {
 
 .sticky-note {
     width: 120px;
+    min-height: 100px;
     padding: 18px 12px;
     text-align: center;
     color: var(--chocolate);
-    box-shadow: 4px 5px 0 var(--caramel);
+    border: 2px solid var(--warm-brown);
+    border-radius: 4px;
+    box-shadow: 5px 6px 0 var(--caramel);
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
 }
 
 .sticky-note p {
@@ -305,12 +311,12 @@ h1 {
 }
 
 .pink-note span {
-    backgroung-color:var(--soft-pink);
+    backgroung-color: var(--soft-pink) !important;
     transform: rotate(-6deg);
 }
 
 green-note {
-    background-color: var(--light-sage);
+    background-color: var(--light-sage) !important;
     transform: rotate(5deg);
 }
 
