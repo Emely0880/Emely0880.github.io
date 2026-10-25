@@ -310,7 +310,7 @@ h1 {
     font-size: 24px;
 }
 
-.pink-note span {
+.pink-note {
     background-color: var(--soft-pink) !important;
     transform: rotate(-6deg);
 }
