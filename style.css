@@ -153,3 +153,36 @@ h1 {
 .curl-pictures img:nth-child(3) {
     transform: rotate(-2deg);
 }
+
+.scrapbook-decor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: -5px;
+}
+
+.scrapbook-decor span {
+    color: var(--chocolate);
+    font-size: 28px;
+    display: inline-block;
+} 
+
+.scrapbook-decor sapn:nth-child(1) {
+    transform: rotate(-15deg);
+}
+
+.scrapbook-decor span:nth-child(2) {
+    transform: rotate(10deg);
+    font-size: 32px;
+}
+
+.scrapbook-decor span:nth-child(3) {
+    color: var(--sage-green);
+    transform: rotate(-10deg);
+}
+
+.scrapbook-decor span:nth-cchild(4) {
+    color: var(--warm-brown);
+    transform: rotate(15deg);
+}
