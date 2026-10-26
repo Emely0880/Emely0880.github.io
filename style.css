@@ -6392,78 +6392,116 @@ nav a:hover {
         min-height: 500px !important;
     }
 } 
-/* ==========================================
-   FIX DOLL INSIDE PHOTO FRAME
-   ========================================== */
+/* ==========================================================
+   FINAL DOLL + FRAME FIX
+   Desktop / Tablet
+   ========================================================== */
+
+.links-frame-group {
+    position: relative !important;
+
+    width: 520px !important;
+    height: 540px !important;
+
+    margin: 0 auto !important;
+
+    overflow: visible !important;
+}
+
+
+/* DOLL — smaller and centered inside opening */
 
 .links-frame-group .links-curly-doll {
     position: absolute !important;
 
-    /* Center the doll inside the frame opening */
+    width: 330px !important;
+    height: 330px !important;
+
     left: 50% !important;
-    top: 50% !important;
+    top: 43% !important;
 
-    /* Make her fit inside the white opening */
-    width: 420px !important;
-    height: 420px !important;
-
-    transform:
-        translate(-50%, -50%)
-        rotate(0deg) !important;
+    transform: translate(-50%, -50%) !important;
 
     object-fit: cover !important;
+
+    border-radius: 0 !important;
 
     z-index: 5 !important;
 }
 
 
-/* Keep frame directly centered over doll */
+/* FRAME — centered and smaller on tablet/desktop */
 
 .links-photo-frame {
     position: absolute !important;
 
+    width: 520px !important;
+    height: 540px !important;
+
+    max-width: none !important;
+
     left: 50% !important;
     top: 50% !important;
 
-    width: 620px !important;
-    height: 570px !important;
-
-    transform:
-        translate(-50%, -50%)
-        rotate(0deg) !important;
+    transform: translate(-50%, -50%) !important;
 
     object-fit: contain !important;
 
     z-index: 10 !important;
+
+    pointer-events: none !important;
 }
 
 
-/* PHONE / SMALL SCREEN */
+/* ==========================================================
+   PHONE ONLY
+   Bigger frame, but doll stays INSIDE
+   ========================================================== */
 
 @media (max-width: 700px) {
 
-    .links-frame-group .links-curly-doll {
-        left: 50% !important;
-        top: 50% !important;
+    .links-frame-group {
+        width: 350px !important;
+        height: 430px !important;
 
-        width: 285px !important;
-        height: 285px !important;
+        max-width: 100% !important;
 
-        transform:
-            translate(-50%, -50%)
-            rotate(0deg) !important;
+        margin: 0 auto !important;
     }
+
+
+    /* Doll fits completely inside white opening */
+
+    .links-frame-group .links-curly-doll {
+        width: 245px !important;
+        height: 245px !important;
+
+        left: 50% !important;
+        top: 42% !important;
+
+        transform: translate(-50%, -50%) !important;
+
+        object-fit: cover !important;
+
+        z-index: 5 !important;
+    }
+
+
+    /* Frame is larger around doll */
 
     .links-photo-frame {
+        width: 390px !important;
+        height: 430px !important;
+
+        max-width: none !important;
+
         left: 50% !important;
         top: 50% !important;
 
-        width: 440px !important;
-        height: 420px !important;
+        transform: translate(-50%, -50%) !important;
 
-        transform:
-            translate(-50%, -50%)
-            rotate(0deg) !important;
+        object-fit: contain !important;
+
+        z-index: 10 !important;
     }
 }
-
