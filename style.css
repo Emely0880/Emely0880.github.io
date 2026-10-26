@@ -10,28 +10,26 @@
     --chocolate: #4D2D22;
 }
 
-/* ---------- PAGE ---------- */
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background-color: #F8EBD9;
+    background: #F8EBD9;
     color: var(--chocolate);
     font-family: Arial, sans-serif;
 }
 
-/* ---------- NAVIGATION ---------- */
+/* NAVIGATION */
 
 nav {
-    background-color: var(--cream);
+    background: var(--cream);
     padding: 20px;
     text-align: center;
     border-bottom: 3px solid var(--soft-pink);
     position: relative;
-    z-index: 20;
+    z-index: 50;
 }
 
 nav a {
@@ -42,22 +40,20 @@ nav a {
     font-weight: bold;
     border-radius: 18px;
     display: inline-block;
-    transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: var(--soft-pink);
+    background: var(--soft-pink);
     transform: rotate(-2deg);
-    box-shadow: 3px 3px 0 var(--caramel);
 }
 
-
-/* ---------- SCRAPBOOK BACKGROUND ---------- */
+/* MAIN SCRAPBOOK */
 
 .scrapbook-page {
     max-width: 1000px;
     margin: 35px auto 70px;
-    padding: 65px 55px;
+    padding: 70px 55px;
+
     position: relative;
     overflow: hidden;
 
@@ -71,8 +67,7 @@ nav a:hover {
         14px 15px 0 var(--light-sage);
 }
 
-
-/* subtle paper texture */
+/* tiny paper texture */
 
 .scrapbook-page::before {
     content: "";
@@ -81,33 +76,33 @@ nav a:hover {
 
     background-image:
         radial-gradient(
-            rgba(133, 88, 62, 0.08) 1px,
+            rgba(133, 88, 62, 0.10) 1px,
             transparent 1px
         );
 
     background-size: 9px 9px;
 
-    opacity: 0.35;
+    opacity: .30;
+
     pointer-events: none;
 }
 
-
-/* ---------- TORN BACKGROUND PAPERS ---------- */
+/* BACKGROUND PAPERS */
 
 .paper-corner {
     position: absolute;
-    z-index: 0;
     pointer-events: none;
+    z-index: 0;
 }
 
-
-/* Pink gingham upper-left */
+/* pink gingham top left */
 
 .gingham-top {
-    width: 330px;
-    height: 150px;
+    width: 350px;
+    height: 155px;
+
     top: -45px;
-    left: -55px;
+    left: -60px;
 
     transform: rotate(-7deg);
 
@@ -116,11 +111,11 @@ nav a:hover {
     background-image:
         linear-gradient(
             90deg,
-            rgba(255,255,255,.45) 50%,
+            rgba(255,255,255,.48) 50%,
             transparent 50%
         ),
         linear-gradient(
-            rgba(255,255,255,.45) 50%,
+            rgba(255,255,255,.48) 50%,
             transparent 50%
         );
 
@@ -129,11 +124,11 @@ nav a:hover {
     clip-path: polygon(
         0 0,
         100% 0,
-        96% 66%,
+        96% 65%,
         88% 72%,
-        80% 65%,
+        80% 64%,
         70% 76%,
-        60% 68%,
+        60% 67%,
         50% 78%,
         40% 66%,
         30% 76%,
@@ -143,17 +138,16 @@ nav a:hover {
     );
 }
 
-
-/* Sage upper-right */
+/* sage top right */
 
 .sage-top {
-    width: 300px;
-    height: 155px;
+    width: 330px;
+    height: 170px;
 
-    top: -35px;
-    right: -65px;
+    top: -40px;
+    right: -70px;
 
-    background-color: var(--light-sage);
+    background: var(--light-sage);
 
     transform: rotate(5deg);
 
@@ -172,8 +166,7 @@ nav a:hover {
     );
 }
 
-
-/* Brown paper bottom */
+/* brown bottom */
 
 .brown-bottom {
     width: 450px;
@@ -182,7 +175,7 @@ nav a:hover {
     bottom: -45px;
     left: 27%;
 
-    background-color: #B98C6C;
+    background: #B98C6C;
 
     transform: rotate(-3deg);
 
@@ -203,12 +196,11 @@ nav a:hover {
     );
 }
 
-
-/* Pink gingham bottom-right */
+/* gingham bottom right */
 
 .gingham-bottom {
-    width: 270px;
-    height: 90px;
+    width: 290px;
+    height: 100px;
 
     bottom: -20px;
     right: -65px;
@@ -220,71 +212,120 @@ nav a:hover {
     background-image:
         linear-gradient(
             90deg,
-            rgba(255,255,255,.45) 50%,
+            rgba(255,255,255,.48) 50%,
             transparent 50%
         ),
         linear-gradient(
-            rgba(255,255,255,.45) 50%,
+            rgba(255,255,255,.48) 50%,
             transparent 50%
         );
 
     background-size: 25px 25px;
 }
 
+/* REAL DECORATION IMAGES */
 
-/* ---------- BACKGROUND DOODLES ---------- */
-
-.background-doodle {
+.decor {
     position: absolute;
-    z-index: 1;
-    font-family: Georgia, serif;
-    color: var(--warm-brown);
+    object-fit: contain;
+    z-index: 10;
     pointer-events: none;
 }
 
-.doodle-one {
-    top: 180px;
-    left: 25px;
-    font-size: 38px;
-    transform: rotate(-15deg);
+/* paper clip */
+
+.paperclip {
+    width: 75px;
+
+    top: 12px;
+    left: 20px;
+
+    transform: rotate(-12deg);
 }
 
-.doodle-two {
-    top: 380px;
-    right: 30px;
-    font-size: 35px;
-    color: var(--sage);
+/* bow */
+
+.top-bow {
+    width: 135px;
+
+    top: 12px;
+    right: 25px;
+
+    transform: rotate(7deg);
 }
 
-.doodle-three {
+/* white flower near bow */
+
+.white-flower {
+    width: 90px;
+
+    top: 90px;
+    right: 5px;
+
+    transform: rotate(12deg);
+}
+
+/* paper scraps */
+
+.paper-scrap {
+    opacity: .95;
+    z-index: 1;
+}
+
+.scrap-one {
+    width: 120px;
+    top: 320px;
+    right: -25px;
+    transform: rotate(12deg);
+}
+
+.scrap-two {
+    width: 105px;
+    top: 610px;
+    left: -30px;
+    transform: rotate(-10deg);
+}
+
+.scrap-three {
+    width: 115px;
+    top: 820px;
+    right: -35px;
+    transform: rotate(8deg);
+}
+
+.scrap-four {
+    width: 120px;
     bottom: 150px;
-    left: 25px;
-    font-size: 40px;
+    right: -25px;
+    transform: rotate(-8deg);
 }
 
-.doodle-four {
-    bottom: 55px;
-    right: 85px;
-    font-size: 45px;
+.scrap-five {
+    width: 125px;
+    bottom: -5px;
+    left: 34%;
+    transform: rotate(5deg);
 }
 
-
-/* ---------- HOME ---------- */
+/* HOME */
 
 .home-section {
     position: relative;
-    z-index: 2;
-    text-align: center;
-    padding: 20px 5px 55px;
-}
+    z-index: 5;
 
+    text-align: center;
+
+    padding: 30px 5px 65px;
+}
 
 .mini-label {
     width: fit-content;
+
     margin: 0 auto 18px;
+
     padding: 9px 20px;
 
-    background-color: var(--light-sage);
+    background: var(--light-sage);
 
     color: var(--chocolate);
 
@@ -299,60 +340,50 @@ nav a:hover {
     box-shadow: 3px 4px 0 var(--sage);
 }
 
-
 .home-section h1 {
     margin: 12px 0 5px;
 
     color: var(--chocolate);
 
     font-family: Georgia, "Times New Roman", serif;
+
     font-size: 48px;
 
     text-shadow: 3px 3px 0 var(--soft-pink);
 }
 
-
 .title-decor {
     display: flex;
     justify-content: center;
-    align-items: center;
 
     gap: 18px;
 
-    margin: 5px 0 24px;
+    margin: 5px 0 25px;
 }
-
 
 .title-decor span {
-    display: inline-block;
-    font-size: 29px;
+    font-size: 30px;
 }
-
 
 .title-decor span:nth-child(1) {
     color: var(--warm-brown);
-    transform: rotate(-15deg);
 }
-
 
 .title-decor span:nth-child(2) {
     color: var(--dusty-pink);
-    font-size: 34px;
 }
-
 
 .title-decor span:nth-child(3) {
     color: var(--chocolate);
-    transform: rotate(10deg);
 }
-
 
 .intro-text {
     max-width: 790px;
 
-    margin: 0 auto 45px;
+    margin: 0 auto 50px;
 
     font-family: Georgia, "Times New Roman", serif;
+
     font-size: 17px;
     font-style: italic;
 
@@ -363,8 +394,7 @@ nav a:hover {
     color: var(--chocolate);
 }
 
-
-/* ---------- HAIR DISPLAY ---------- */
+/* HAIR AREA */
 
 .hair-display {
     position: relative;
@@ -375,13 +405,12 @@ nav a:hover {
 
     gap: 55px;
 
-    min-height: 340px;
+    min-height: 350px;
 
     padding: 25px 0;
 }
 
-
-/* ---------- NOTES ---------- */
+/* NOTES */
 
 .sticky-note {
     position: relative;
@@ -395,13 +424,13 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
 
-    border: 1px solid rgba(77,45,34,.35);
-
-    box-shadow: 5px 7px 0 rgba(133,88,62,.35);
-
     font-family: Georgia, "Times New Roman", serif;
 
-    z-index: 3;
+    border: 1px solid rgba(77,45,34,.3);
+
+    box-shadow: 5px 7px 0 rgba(133,88,62,.3);
+
+    z-index: 5;
 
     clip-path: polygon(
         2% 3%,
@@ -419,7 +448,6 @@ nav a:hover {
     );
 }
 
-
 .sticky-note p {
     margin: 7px 0;
 
@@ -429,23 +457,21 @@ nav a:hover {
     line-height: 1.35;
 }
 
-
-.sticky-note > span {
+.sticky-note span {
     font-size: 27px;
 }
 
-
 .pink-note {
-    background-color: #EFBFC8;
+    background: #EFBFC8;
     transform: rotate(-6deg);
 }
 
-
 .green-note {
-    background-color: #CDD7B4;
+    background: #CDD7B4;
     transform: rotate(5deg);
 }
 
+/* tape */
 
 .note-tape {
     position: absolute;
@@ -458,36 +484,20 @@ nav a:hover {
 
     transform: translateX(-50%) rotate(-4deg);
 
-    background-color: rgba(238, 218, 184, .9);
+    background: rgba(238,218,184,.9);
 }
 
-
-.green-note .note-tape {
-    transform: translateX(-50%) rotate(6deg);
-}
-
-
-.tiny-flower {
-    color: var(--warm-brown);
-}
-
-
-.tiny-heart {
-    color: var(--warm-brown);
-}
-
-
-/* ---------- MAIN PHOTO ---------- */
+/* MAIN PHOTO */
 
 .main-photo {
     position: relative;
-    z-index: 4;
+
+    z-index: 6;
 
     transform: rotate(-2deg);
 }
 
-
-.main-photo img {
+.main-photo > img:first-of-type {
     width: 220px;
     height: 290px;
 
@@ -495,17 +505,14 @@ nav a:hover {
 
     display: block;
 
-    background-color: #FFFDF7;
+    background: #FFFDF7;
 
     padding: 12px 12px 38px;
 
     border: 2px solid #D6D1BE;
 
-    border-radius: 3px;
-
     box-shadow: 7px 8px 0 var(--sage);
 }
-
 
 .photo-tape {
     position: absolute;
@@ -518,90 +525,92 @@ nav a:hover {
 
     transform: translateX(-50%) rotate(7deg);
 
-    background-color: rgba(217,143,157,.75);
+    background: rgba(217,143,157,.8);
 
-    z-index: 6;
+    z-index: 8;
 }
 
+/* real pink flower on photo */
 
-.photo-flower {
+.photo-real-flower {
     position: absolute;
 
-    left: -15px;
-    bottom: 15px;
+    width: 58px !important;
+    height: 58px !important;
 
-    font-size: 38px;
+    object-fit: contain !important;
+
+    padding: 0 !important;
+
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+
+    left: -25px;
+    bottom: 5px;
+
+    z-index: 10;
 
     transform: rotate(-12deg);
-
-    z-index: 7;
 }
 
+/* long flower left */
 
-/* ---------- LITTLE DECORATIONS ---------- */
+.pink-long-flower {
+    width: 115px;
 
-.hair-heart,
-.hair-spark,
-.hair-flower,
-.hair-curl {
-    position: absolute;
-    z-index: 5;
-}
-
-
-.hair-heart {
-    color: var(--dusty-pink);
-    font-size: 36px;
-
-    right: 185px;
+    left: -20px;
     bottom: 20px;
 
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
+
+    z-index: 8;
 }
 
+/* little doodles */
 
-.hair-spark {
+.small-doodle {
+    position: absolute;
+
     color: var(--warm-brown);
+
+    font-family: Georgia, serif;
+
+    z-index: 8;
+}
+
+.doodle-a {
+    left: 12%;
+    bottom: 15px;
     font-size: 34px;
-
-    left: 190px;
-    top: 40px;
 }
 
-
-.hair-flower {
-    color: var(--sage);
-    font-size: 39px;
-
-    right: 205px;
+.doodle-b {
+    right: 12%;
     top: 25px;
-
-    transform: rotate(15deg);
+    font-size: 33px;
 }
 
-
-.hair-curl {
-    color: var(--chocolate);
-    font-size: 42px;
-
-    left: 180px;
-    bottom: 25px;
+.doodle-c {
+    right: 6%;
+    bottom: 20px;
+    font-size: 28px;
 }
 
-
-/* ---------- PINK TORN COLLAGE ---------- */
+/* LOVE YOUR CURLS */
 
 .curl-collage {
     position: relative;
-    z-index: 3;
+
+    z-index: 6;
 
     margin: 5px -20px 30px;
 
-    padding: 60px 40px 70px;
+    padding: 60px 40px 75px;
 
     text-align: center;
 
-    background-color: #EFB7C1;
+    background: #EFB7C1;
 
     box-shadow: 8px 9px 0 rgba(174,187,145,.6);
 
@@ -619,7 +628,6 @@ nav a:hover {
         86% 4%,
         94% 2%,
         100% 4%,
-
         100% 95%,
         94% 97%,
         87% 94%,
@@ -636,21 +644,34 @@ nav a:hover {
     );
 }
 
+/* gingham tape above pink paper */
 
 .collage-tape-top {
     position: absolute;
 
-    width: 100px;
-    height: 25px;
+    width: 105px;
+    height: 27px;
 
-    top: 5px;
+    top: 6px;
     left: 50%;
 
     transform: translateX(-50%) rotate(2deg);
 
-    background-color: rgba(255,247,234,.75);
-}
+    background-color: #F5CFD5;
 
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.55) 50%,
+            transparent 50%
+        ),
+        linear-gradient(
+            rgba(255,255,255,.55) 50%,
+            transparent 50%
+        );
+
+    background-size: 15px 15px;
+}
 
 .scrapbook-decor {
     display: flex;
@@ -660,25 +681,23 @@ nav a:hover {
 
     margin-bottom: 4px;
 
-    font-size: 27px;
+    font-size: 28px;
 
     color: var(--chocolate);
 }
-
 
 .curl-collage h2 {
     margin: 8px 0;
 
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 39px;
+    font-size: 40px;
 
     color: var(--chocolate);
 }
 
-
 .collage-message {
-    margin-bottom: 35px;
+    margin-bottom: 38px;
 
     color: var(--chocolate);
 
@@ -687,8 +706,7 @@ nav a:hover {
     font-size: 16px;
 }
 
-
-/* ---------- COLLAGE PHOTOS ---------- */
+/* COLLAGE PHOTOS */
 
 .curl-pictures {
     position: relative;
@@ -702,11 +720,10 @@ nav a:hover {
     margin-top: 20px;
 }
 
-
 .photo-card {
     position: relative;
 
-    background-color: var(--cream);
+    background: var(--cream);
 
     padding: 10px 10px 34px;
 
@@ -714,9 +731,8 @@ nav a:hover {
 
     box-shadow: 4px 5px 0 rgba(133,88,62,.25);
 
-    z-index: 3;
+    z-index: 5;
 }
-
 
 .photo-card img {
     width: 190px;
@@ -727,24 +743,20 @@ nav a:hover {
     object-fit: cover;
 }
 
-
 .card-one {
     transform: rotate(-5deg);
     margin-right: -10px;
 }
 
-
 .card-two {
     transform: rotate(2deg);
-    z-index: 5;
+    z-index: 7;
 }
-
 
 .card-three {
     transform: rotate(4deg);
     margin-left: -10px;
 }
-
 
 .collage-tape {
     position: absolute;
@@ -755,77 +767,82 @@ nav a:hover {
     top: -12px;
     left: 50%;
 
-    transform: translateX(-50%);
-
-    z-index: 7;
+    z-index: 8;
 }
 
-
 .tape-one {
-    background-color: rgba(217,143,157,.85);
+    background: rgba(217,143,157,.9);
     transform: translateX(-50%) rotate(-5deg);
 }
 
-
 .tape-two {
-    background-color: rgba(255,247,234,.9);
+    background: rgba(255,247,234,.95);
     transform: translateX(-50%) rotate(3deg);
 }
 
-
 .tape-three {
-    background-color: rgba(174,187,145,.9);
+    background: rgba(174,187,145,.95);
     transform: translateX(-50%) rotate(5deg);
 }
 
+/* FALLING FLOWERS */
 
-/* ---------- COLLAGE DOODLES ---------- */
+.falling-flowers {
+    width: 110px;
+
+    left: -5px;
+    bottom: 20px;
+
+    transform: rotate(-5deg);
+
+    z-index: 9;
+}
+
+/* COLLAGE DOODLES */
 
 .collage-heart,
 .collage-flower,
 .collage-curl {
     position: absolute;
+
     color: var(--chocolate);
 }
 
-
 .heart-left {
     left: 45px;
-    bottom: 85px;
-    font-size: 37px;
-    transform: rotate(-12deg);
-}
+    top: 80px;
 
+    font-size: 37px;
+}
 
 .heart-right {
     right: 45px;
-    top: 120px;
+    top: 125px;
+
     font-size: 38px;
-    transform: rotate(14deg);
 }
 
-
 .collage-flower {
-    left: 55px;
-    top: 120px;
+    right: 70px;
+    top: 70px;
+
     font-size: 35px;
 }
 
-
 .collage-curl {
     right: 50px;
-    bottom: 65px;
+    bottom: 55px;
+
     font-size: 43px;
 }
 
-
-/* ---------- PHONE / TABLET ---------- */
+/* MOBILE */
 
 @media (max-width: 700px) {
 
     .scrapbook-page {
         margin: 20px 12px 50px;
-        padding: 50px 18px;
+        padding: 55px 18px;
     }
 
     nav {
@@ -846,14 +863,39 @@ nav a:hover {
         line-height: 1.65;
     }
 
+    /* decorations */
+
+    .paperclip {
+        width: 45px;
+        top: 8px;
+        left: 7px;
+    }
+
+    .top-bow {
+        width: 78px;
+        top: 10px;
+        right: 5px;
+    }
+
+    .white-flower {
+        width: 55px;
+        top: 65px;
+        right: -3px;
+    }
+
+    .paper-scrap {
+        width: 75px;
+    }
+
     .hair-display {
         gap: 10px;
-        min-height: 270px;
+        min-height: 275px;
     }
 
     .sticky-note {
         width: 105px;
         min-height: 115px;
+
         padding: 28px 8px 15px;
     }
 
@@ -861,9 +903,10 @@ nav a:hover {
         font-size: 13px;
     }
 
-    .main-photo img {
+    .main-photo > img:first-of-type {
         width: 145px;
         height: 210px;
+
         padding: 8px 8px 28px;
     }
 
@@ -877,29 +920,27 @@ nav a:hover {
         height: 18px;
     }
 
-    .photo-flower {
-        font-size: 27px;
+    .photo-real-flower {
+        width: 38px !important;
+        height: 38px !important;
+
+        left: -15px;
     }
 
-    .hair-heart,
-    .hair-spark,
-    .hair-flower,
-    .hair-curl {
-        display: none;
+    .pink-long-flower {
+        width: 65px;
+        left: -12px;
     }
 
     .curl-collage {
         margin-left: -8px;
         margin-right: -8px;
-        padding: 45px 10px 55px;
+
+        padding: 48px 10px 60px;
     }
 
     .curl-collage h2 {
         font-size: 30px;
-    }
-
-    .curl-pictures {
-        gap: 0;
     }
 
     .photo-card {
@@ -924,6 +965,11 @@ nav a:hover {
         height: 14px;
     }
 
+    .falling-flowers {
+        width: 70px;
+        left: -10px;
+    }
+
     .gingham-top {
         width: 220px;
         height: 110px;
@@ -939,5 +985,6 @@ nav a:hover {
     .collage-curl {
         opacity: .8;
     }
-
 }
+
+   
