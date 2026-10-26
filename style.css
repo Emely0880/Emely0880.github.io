@@ -6281,3 +6281,115 @@ nav a:hover {
             rotate(90deg) !important;
     }
 }
+
+/* ==========================================================
+   LINKS PAGE — PHOTO FRAME INSTEAD OF CAMERA
+   ========================================================== */
+
+/* CAMERA IS GONE */
+
+.links-camera {
+    display: none !important;
+}
+
+
+/* AREA FOR DOLL + FRAME */
+
+.links-frame-group {
+    position: relative !important;
+
+    width: 600px !important;
+    height: 570px !important;
+
+    max-width: 100% !important;
+
+    margin: 0 auto !important;
+}
+
+
+/* CURLY DOLL */
+
+.links-frame-group .links-curly-doll {
+    position: absolute !important;
+
+    width: 310px !important;
+    height: 380px !important;
+
+    left: 50% !important;
+    top: 85px !important;
+
+    transform:
+        translateX(-50%)
+        rotate(-1deg) !important;
+
+    object-fit: cover !important;
+
+    z-index: 5 !important;
+}
+
+
+/* PHOTO FRAME ON TOP */
+
+.links-photo-frame {
+    position: absolute !important;
+
+    width: 620px !important;
+    height: 570px !important;
+
+    max-width: none !important;
+
+    left: 50% !important;
+    top: 50% !important;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(2deg) !important;
+
+    object-fit: contain !important;
+
+    z-index: 10 !important;
+
+    pointer-events: none !important;
+}
+
+
+/* KEEP SECTION SPACING CLEAN */
+
+.camera-doll-section {
+    min-height: 650px !important;
+}
+
+
+/* PHONE */
+
+@media (max-width: 700px) {
+
+    .links-frame-group {
+        width: 100% !important;
+        height: 430px !important;
+    }
+
+    .links-frame-group .links-curly-doll {
+        width: 220px !important;
+        height: 280px !important;
+
+        top: 60px !important;
+    }
+
+    .links-photo-frame {
+        width: 440px !important;
+        height: 420px !important;
+
+        left: 50% !important;
+        top: 50% !important;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(2deg) !important;
+    }
+
+    .camera-doll-section {
+        min-height: 500px !important;
+    }
+} 
+
