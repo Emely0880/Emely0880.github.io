@@ -6680,3 +6680,57 @@ nav a:hover {
         z-index: 12 !important;
     }
 }
+
+
+/* ==========================================
+   FINAL TABLET + COMPUTER STAR FIX
+   PHONE DOES NOT CHANGE
+   ========================================== */
+
+@media screen and (min-width: 701px) {
+
+    /* LEFT STAR */
+    .links-doll-stars .doll-star-left {
+        display: block !important;
+
+        width: 75px !important;
+        height: 75px !important;
+        max-width: 75px !important;
+        max-height: 75px !important;
+
+        left: 35px !important;
+        right: auto !important;
+
+        top: 120px !important;
+        bottom: auto !important;
+
+        transform: rotate(-15deg) !important;
+
+        object-fit: contain !important;
+
+        z-index: 20 !important;
+    }
+
+
+    /* RIGHT STAR */
+    .links-doll-stars .doll-star-right {
+        display: block !important;
+
+        width: 75px !important;
+        height: 75px !important;
+        max-width: 75px !important;
+        max-height: 75px !important;
+
+        right: 35px !important;
+        left: auto !important;
+
+        top: 280px !important;
+        bottom: auto !important;
+
+        transform: rotate(15deg) !important;
+
+        object-fit: contain !important;
+
+        z-index: 20 !important;
+    }
+}
