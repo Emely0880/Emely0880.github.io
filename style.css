@@ -443,10 +443,11 @@ h1 {
 }
 
 .torn-paper {
-    width: 280px;
-    height: 65px;
+    width: 430px;
+    height: 115px;
     background-color: #DDE3C7;
-    margin: -45px 0 15px -45px;
+    margin: -45px 0 5px -45px;
+    transform: rotate(-2deg);
 
     clip-path: polygon(
         0 0,
