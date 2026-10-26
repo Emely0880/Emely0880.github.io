@@ -436,3 +436,31 @@ h1 {
     right: 25%;
     transform: rotate(-4deg);
 }
+.home-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Torn paper layer */
+.home-section::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: -15px;
+    width: 45%;
+    height: 70px;
+    background-color: var(--light-sage);
+    transform: rotate(-3deg);
+    clip-path: polygon(
+        0 15%, 8% 22%, 16% 12%, 25% 25%,
+        35% 13%, 45% 24%, 55% 10%, 65% 22%,
+        75% 12%, 85% 25%, 100% 15%,
+        100% 0, 0 0
+    );
+    z-index: 0;
+}
+
+.home-section > * {
+    position: relative;
+    z-index: 1;
+}
