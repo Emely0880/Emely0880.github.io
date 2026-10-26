@@ -1,33 +1,44 @@
 :root {
     --cream: #FFF7EA;
+    --paper: #FFF9ED;
     --soft-pink: #F3C6CE;
     --dusty-pink: #D98F9D;
-    --sage-green: #AEBB91;
+    --sage: #AEBB91;
     --light-sage: #DDE3C7;
     --caramel: #B77A50;
     --warm-brown: #85583E;
     --chocolate: #4D2D22;
 }
 
-body {
-    background-color: #FFF4E6;
-    font-family: Arial, sans-serif;
-    color: #4A2C20;
-    margin: 0;
+/* ---------- PAGE ---------- */
+
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    background-color: #F8EBD9;
+    color: var(--chocolate);
+    font-family: Arial, sans-serif;
+}
+
+/* ---------- NAVIGATION ---------- */
 
 nav {
     background-color: var(--cream);
-    padding: 22px;
+    padding: 20px;
     text-align: center;
-    border-bottom: 4px solid var(--soft-pink);
+    border-bottom: 3px solid var(--soft-pink);
+    position: relative;
+    z-index: 20;
 }
 
 nav a {
     color: var(--chocolate);
     text-decoration: none;
-    margin: 0 10px;
-    padding: 10px 18px;
+    margin: 0 12px;
+    padding: 9px 16px;
     font-weight: bold;
     border-radius: 18px;
     display: inline-block;
@@ -36,433 +47,897 @@ nav a {
 
 nav a:hover {
     background-color: var(--soft-pink);
-    color: var(--chocolate);
-    transform: translateY(-3px) rotate(-2deg);
-    box-shadow: 3px 4px 0 var(--caramel);
+    transform: rotate(-2deg);
+    box-shadow: 3px 3px 0 var(--caramel);
 }
 
-img {
-    max-width: 400px;
-    height: auto;
-    border-radius: 20px;
-    display: block;
-    margin: 20px auto;
+
+/* ---------- SCRAPBOOK BACKGROUND ---------- */
+
+.scrapbook-page {
+    max-width: 1000px;
+    margin: 35px auto 70px;
+    padding: 65px 55px;
+    position: relative;
+    overflow: hidden;
+
+    background-color: var(--paper);
+
+    border: 2px solid var(--warm-brown);
+    border-radius: 25px;
+
+    box-shadow:
+        8px 9px 0 var(--soft-pink),
+        14px 15px 0 var(--light-sage);
 }
 
-h1 {
-    color: #5C321E;
-    text-align: center;
-    margin-top: 40px;
+
+/* subtle paper texture */
+
+.scrapbook-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        radial-gradient(
+            rgba(133, 88, 62, 0.08) 1px,
+            transparent 1px
+        );
+
+    background-size: 9px 9px;
+
+    opacity: 0.35;
+    pointer-events: none;
 }
+
+
+/* ---------- TORN BACKGROUND PAPERS ---------- */
+
+.paper-corner {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+/* Pink gingham upper-left */
+
+.gingham-top {
+    width: 330px;
+    height: 150px;
+    top: -45px;
+    left: -55px;
+
+    transform: rotate(-7deg);
+
+    background-color: #F5CFD5;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.45) 50%,
+            transparent 50%
+        ),
+        linear-gradient(
+            rgba(255,255,255,.45) 50%,
+            transparent 50%
+        );
+
+    background-size: 28px 28px;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        96% 66%,
+        88% 72%,
+        80% 65%,
+        70% 76%,
+        60% 68%,
+        50% 78%,
+        40% 66%,
+        30% 76%,
+        20% 67%,
+        10% 75%,
+        0 68%
+    );
+}
+
+
+/* Sage upper-right */
+
+.sage-top {
+    width: 300px;
+    height: 155px;
+
+    top: -35px;
+    right: -65px;
+
+    background-color: var(--light-sage);
+
+    transform: rotate(5deg);
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        87% 91%,
+        77% 100%,
+        65% 89%,
+        52% 98%,
+        40% 87%,
+        28% 96%,
+        16% 85%,
+        5% 93%
+    );
+}
+
+
+/* Brown paper bottom */
+
+.brown-bottom {
+    width: 450px;
+    height: 120px;
+
+    bottom: -45px;
+    left: 27%;
+
+    background-color: #B98C6C;
+
+    transform: rotate(-3deg);
+
+    clip-path: polygon(
+        0 25%,
+        10% 13%,
+        20% 24%,
+        30% 10%,
+        40% 22%,
+        50% 8%,
+        60% 20%,
+        70% 10%,
+        80% 22%,
+        90% 11%,
+        100% 20%,
+        100% 100%,
+        0 100%
+    );
+}
+
+
+/* Pink gingham bottom-right */
+
+.gingham-bottom {
+    width: 270px;
+    height: 90px;
+
+    bottom: -20px;
+    right: -65px;
+
+    transform: rotate(-9deg);
+
+    background-color: #F5CFD5;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.45) 50%,
+            transparent 50%
+        ),
+        linear-gradient(
+            rgba(255,255,255,.45) 50%,
+            transparent 50%
+        );
+
+    background-size: 25px 25px;
+}
+
+
+/* ---------- BACKGROUND DOODLES ---------- */
+
+.background-doodle {
+    position: absolute;
+    z-index: 1;
+    font-family: Georgia, serif;
+    color: var(--warm-brown);
+    pointer-events: none;
+}
+
+.doodle-one {
+    top: 180px;
+    left: 25px;
+    font-size: 38px;
+    transform: rotate(-15deg);
+}
+
+.doodle-two {
+    top: 380px;
+    right: 30px;
+    font-size: 35px;
+    color: var(--sage);
+}
+
+.doodle-three {
+    bottom: 150px;
+    left: 25px;
+    font-size: 40px;
+}
+
+.doodle-four {
+    bottom: 55px;
+    right: 85px;
+    font-size: 45px;
+}
+
+
+/* ---------- HOME ---------- */
 
 .home-section {
-    background-color: #FFFDF7;
-    max-width: 850px;
-    margin: 45px auto;
-    padding: 45px;
-    border-radius: 28px;
-    border: 2px solid var(--warm-brown);
-    box-shadow: 8px 8px 0 var(--soft-pink);
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px 5px 55px;
 }
 
-.home-section h1 {
-    color: var(--chocolate);
-    font-size: 42px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-shadow: 3px 3px 0 var(--soft-pink);
-}
-
-.home-section > p:not(.mini-label) {
-    font-family: Georgia, "Times New Roman", serif;
-    font-style: italic;
-    font-size: 17px;
-    line-height: 1.7;
-    color: var(--chocolate);
-}
-
-.home-section img {
-    background-color: white;
-    padding: 10px 10px 28px 10px;
-    border: 2px solid var(--light-sage);
-    border-radius: 8px;
-    box-shadow: 7px 7px 0 var(--sage-green);
-    transform: rotate(-2deg);
-    width: 180px !important;
-    max-width: 180px !important;
-    height: auto;
-    margin: 20px auto;
-}
 
 .mini-label {
-    background-color: var(--light-sage) !important;
-    color: var(--chocolate) !important;
     width: fit-content;
-    margin: 0 auto 18px !important;
-    padding: 8px 18px !important;
-    border-radius: 4px !important;
+    margin: 0 auto 18px;
+    padding: 9px 20px;
+
+    background-color: var(--light-sage);
+
+    color: var(--chocolate);
+
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 2px;
+
+    border-radius: 3px;
+
     transform: rotate(-2deg);
-    box-shadow: 3px 3px 0 var(--sage-green);
+
+    box-shadow: 3px 4px 0 var(--sage);
 }
+
+
+.home-section h1 {
+    margin: 12px 0 5px;
+
+    color: var(--chocolate);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 48px;
+
+    text-shadow: 3px 3px 0 var(--soft-pink);
+}
+
 
 .title-decor {
     display: flex;
     justify-content: center;
     align-items: center;
+
     gap: 18px;
-    margin: -8px 0 15px;
+
+    margin: 5px 0 24px;
 }
+
 
 .title-decor span {
     display: inline-block;
-    font-size: 24px;
+    font-size: 29px;
 }
 
+
 .title-decor span:nth-child(1) {
-    color: var(--sage-green);
-    transform: rotate(-12deg);
+    color: var(--warm-brown);
+    transform: rotate(-15deg);
 }
+
 
 .title-decor span:nth-child(2) {
     color: var(--dusty-pink);
-    font-size: 28px;
-    transform: rotate(8deg);
+    font-size: 34px;
 }
+
 
 .title-decor span:nth-child(3) {
-    color: var(--caramel);
-    transform: rotate(-8deg);
+    color: var(--chocolate);
+    transform: rotate(10deg);
 }
 
+
+.intro-text {
+    max-width: 790px;
+
+    margin: 0 auto 45px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-style: italic;
+
+    line-height: 1.8;
+
+    text-align: left;
+
+    color: var(--chocolate);
+}
+
+
+/* ---------- HAIR DISPLAY ---------- */
+
 .hair-display {
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 18px;
-    margin-top: 25px;
-    flex-wrap: wrap;
+
+    gap: 55px;
+
+    min-height: 340px;
+
+    padding: 25px 0;
 }
 
+
+/* ---------- NOTES ---------- */
+
 .sticky-note {
-    width: 120px;
-    min-height: 100px;
-    padding: 18px 12px;
-    text-align: center;
-    color: var(--chocolate);
-    border: 2px solid var(--warm-brown);
-    border-radius: 4px;
-    box-shadow: 5px 6px 0 var(--caramel);
+    position: relative;
+
+    width: 170px;
+    min-height: 160px;
+
+    padding: 38px 20px 25px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    border: 1px solid rgba(77,45,34,.35);
+
+    box-shadow: 5px 7px 0 rgba(133,88,62,.35);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    z-index: 3;
+
+    clip-path: polygon(
+        2% 3%,
+        97% 0,
+        100% 88%,
+        91% 93%,
+        80% 90%,
+        69% 97%,
+        58% 91%,
+        46% 98%,
+        35% 91%,
+        24% 97%,
+        13% 90%,
+        3% 94%
+    );
 }
+
 
 .sticky-note p {
-    margin: 5px 0;
-    font-family: Georgia, "Times New Roman", serif;
+    margin: 7px 0;
+
+    font-size: 18px;
     font-style: italic;
-    font-size: 14px;
-    line-height: 1.4;
+
+    line-height: 1.35;
 }
 
-.sticky-note span {
-    font-size: 24px;
+
+.sticky-note > span {
+    font-size: 27px;
 }
+
 
 .pink-note {
-    background-color: var(--soft-pink);
+    background-color: #EFBFC8;
     transform: rotate(-6deg);
 }
 
+
 .green-note {
-    background-color: var(--light-sage);
+    background-color: #CDD7B4;
     transform: rotate(5deg);
 }
 
-.curl-collage {
-    background-color: var(--soft-pink);
-    max-width: 850px;
-    margin: 55px auto;
-    padding: 35px;
-    text-align: center;
-    border-radius: 30px;
-    border: 2px dashed var(--warm-brown);
-    box-shadow: 8px 8px 0 var(--light-sage);
+
+.note-tape {
+    position: absolute;
+
+    width: 70px;
+    height: 21px;
+
+    top: -4px;
+    left: 50%;
+
+    transform: translateX(-50%) rotate(-4deg);
+
+    background-color: rgba(238, 218, 184, .9);
 }
 
-.curl-collage h2 {
-    color: var(--chocolate);
-    font-size: 32px;
-    margin-top: 0;
+
+.green-note .note-tape {
+    transform: translateX(-50%) rotate(6deg);
 }
 
-.curl-collage p {
+
+.tiny-flower {
     color: var(--warm-brown);
-    font-weight: bold;
 }
 
-.curl-pictures {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    margin-top: 25px;
-    flex-wrap: wrap;
+
+.tiny-heart {
+    color: var(--warm-brown);
+}
+
+
+/* ---------- MAIN PHOTO ---------- */
+
+.main-photo {
     position: relative;
-    padding: 25px 15px;
-}
+    z-index: 4;
 
-.curl-pictures::before {
-    content: "";
-    position: absolute;
-    width: 75%;
-    height: 75%;
-    background-color: var(--light-sage);
-    border-radius: 35% 20% 30% 15%;
-    transform: rotate(-3deg);
-    z-index: 0;
-}
-
-.curl-pictures::after {
-    content: "";
-    position: absolute;
-    width: 65%;
-    height: 70%;
-    background-color: var(--cream);
-    border: 2px dashed var(--caramel);
-    transform: rotate(4deg);
-    z-index: 0;
-}
-
-.curl-pictures img {
-    width: 150px;
-    height: 180px;
-    object-fit: cover;
-    background-color: var(--cream);
-    padding: 8px 8px 25px 8px;
-    border: 2px solid var(--sage-green);
-    border-radius: 6px;
-    box-shadow: 5px 6px 0 var(--sage-green);
-    margin: 0 -15px;
-    position: relative;
-    z-index: 2;
-}
-
-.curl-pictures img:nth-child(1) {
-    transform: rotate(-5deg);
-}
-
-.curl-pictures img:nth-child(2) {
-    transform: rotate(3deg);
-}
-
-.curl-pictures img:nth-child(3) {
     transform: rotate(-2deg);
 }
+
+
+.main-photo img {
+    width: 220px;
+    height: 290px;
+
+    object-fit: cover;
+
+    display: block;
+
+    background-color: #FFFDF7;
+
+    padding: 12px 12px 38px;
+
+    border: 2px solid #D6D1BE;
+
+    border-radius: 3px;
+
+    box-shadow: 7px 8px 0 var(--sage);
+}
+
+
+.photo-tape {
+    position: absolute;
+
+    width: 85px;
+    height: 25px;
+
+    top: -10px;
+    left: 50%;
+
+    transform: translateX(-50%) rotate(7deg);
+
+    background-color: rgba(217,143,157,.75);
+
+    z-index: 6;
+}
+
+
+.photo-flower {
+    position: absolute;
+
+    left: -15px;
+    bottom: 15px;
+
+    font-size: 38px;
+
+    transform: rotate(-12deg);
+
+    z-index: 7;
+}
+
+
+/* ---------- LITTLE DECORATIONS ---------- */
+
+.hair-heart,
+.hair-spark,
+.hair-flower,
+.hair-curl {
+    position: absolute;
+    z-index: 5;
+}
+
+
+.hair-heart {
+    color: var(--dusty-pink);
+    font-size: 36px;
+
+    right: 185px;
+    bottom: 20px;
+
+    transform: rotate(-15deg);
+}
+
+
+.hair-spark {
+    color: var(--warm-brown);
+    font-size: 34px;
+
+    left: 190px;
+    top: 40px;
+}
+
+
+.hair-flower {
+    color: var(--sage);
+    font-size: 39px;
+
+    right: 205px;
+    top: 25px;
+
+    transform: rotate(15deg);
+}
+
+
+.hair-curl {
+    color: var(--chocolate);
+    font-size: 42px;
+
+    left: 180px;
+    bottom: 25px;
+}
+
+
+/* ---------- PINK TORN COLLAGE ---------- */
+
+.curl-collage {
+    position: relative;
+    z-index: 3;
+
+    margin: 5px -20px 30px;
+
+    padding: 60px 40px 70px;
+
+    text-align: center;
+
+    background-color: #EFB7C1;
+
+    box-shadow: 8px 9px 0 rgba(174,187,145,.6);
+
+    clip-path: polygon(
+        0 4%,
+        7% 2%,
+        14% 4%,
+        22% 1%,
+        30% 3%,
+        39% 1%,
+        48% 4%,
+        58% 1%,
+        67% 3%,
+        76% 1%,
+        86% 4%,
+        94% 2%,
+        100% 4%,
+
+        100% 95%,
+        94% 97%,
+        87% 94%,
+        79% 98%,
+        70% 95%,
+        61% 98%,
+        52% 95%,
+        43% 98%,
+        34% 95%,
+        25% 98%,
+        16% 95%,
+        8% 98%,
+        0 95%
+    );
+}
+
+
+.collage-tape-top {
+    position: absolute;
+
+    width: 100px;
+    height: 25px;
+
+    top: 5px;
+    left: 50%;
+
+    transform: translateX(-50%) rotate(2deg);
+
+    background-color: rgba(255,247,234,.75);
+}
+
 
 .scrapbook-decor {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 35px;
-    margin-top: -22px;
+
+    gap: 22px;
+
+    margin-bottom: 4px;
+
+    font-size: 27px;
+
+    color: var(--chocolate);
+}
+
+
+.curl-collage h2 {
+    margin: 8px 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 39px;
+
+    color: var(--chocolate);
+}
+
+
+.collage-message {
+    margin-bottom: 35px;
+
+    color: var(--chocolate);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+}
+
+
+/* ---------- COLLAGE PHOTOS ---------- */
+
+.curl-pictures {
     position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0;
+
+    margin-top: 20px;
+}
+
+
+.photo-card {
+    position: relative;
+
+    background-color: var(--cream);
+
+    padding: 10px 10px 34px;
+
+    border: 1px solid #D2BCA5;
+
+    box-shadow: 4px 5px 0 rgba(133,88,62,.25);
+
     z-index: 3;
 }
 
-.scrapbook-decor span {
+
+.photo-card img {
+    width: 190px;
+    height: 210px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.card-one {
+    transform: rotate(-5deg);
+    margin-right: -10px;
+}
+
+
+.card-two {
+    transform: rotate(2deg);
+    z-index: 5;
+}
+
+
+.card-three {
+    transform: rotate(4deg);
+    margin-left: -10px;
+}
+
+
+.collage-tape {
+    position: absolute;
+
+    width: 70px;
+    height: 22px;
+
+    top: -12px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 7;
+}
+
+
+.tape-one {
+    background-color: rgba(217,143,157,.85);
+    transform: translateX(-50%) rotate(-5deg);
+}
+
+
+.tape-two {
+    background-color: rgba(255,247,234,.9);
+    transform: translateX(-50%) rotate(3deg);
+}
+
+
+.tape-three {
+    background-color: rgba(174,187,145,.9);
+    transform: translateX(-50%) rotate(5deg);
+}
+
+
+/* ---------- COLLAGE DOODLES ---------- */
+
+.collage-heart,
+.collage-flower,
+.collage-curl {
+    position: absolute;
     color: var(--chocolate);
-    font-size: 28px;
-    display: inline-block;
 }
 
-.scrapbook-decor span:nth-child(1) {
-    transform: rotate(-15deg);
+
+.heart-left {
+    left: 45px;
+    bottom: 85px;
+    font-size: 37px;
+    transform: rotate(-12deg);
 }
 
-.scrapbook-decor span:nth-child(2) {
-    transform: rotate(10deg);
-    font-size: 32px;
+
+.heart-right {
+    right: 45px;
+    top: 120px;
+    font-size: 38px;
+    transform: rotate(14deg);
 }
 
-.scrapbook-decor span:nth-child(3) {
-    color: var(--sage-green);
-    transform: rotate(-10deg);
+
+.collage-flower {
+    left: 55px;
+    top: 120px;
+    font-size: 35px;
 }
 
-.scrapbook-decor span:nth-child(4) {
-    color: var(--warm-brown);
-    transform: rotate(15deg);
+
+.collage-curl {
+    right: 50px;
+    bottom: 65px;
+    font-size: 43px;
 }
 
-@media (max-width: 600px) {
-    .home-section,
-    .curl-collage {
-        margin: 25px 15px;
-        padding: 25px 18px;
+
+/* ---------- PHONE / TABLET ---------- */
+
+@media (max-width: 700px) {
+
+    .scrapbook-page {
+        margin: 20px 12px 50px;
+        padding: 50px 18px;
+    }
+
+    nav {
+        padding: 14px 5px;
+    }
+
+    nav a {
+        margin: 3px;
+        padding: 8px 10px;
     }
 
     .home-section h1 {
-        font-size: 34px;
+        font-size: 35px;
+    }
+
+    .intro-text {
+        font-size: 15px;
+        line-height: 1.65;
     }
 
     .hair-display {
         gap: 10px;
+        min-height: 270px;
     }
 
     .sticky-note {
-        width: 90px;
-        min-height: 85px;
-        padding: 12px 8px;
+        width: 105px;
+        min-height: 115px;
+        padding: 28px 8px 15px;
     }
 
     .sticky-note p {
-        font-size: 12px;
+        font-size: 13px;
     }
 
-    .curl-pictures img {
-        width: 100px;
-        height: 130px;
-}
-}
-.sticky-note {
-    position: relative;
-}
-.sticky-note::before {
-    conntent: "";
-    position: absolute;
-    width: 45px;
-    height: 14px;
-    background-color: rgba(255, 247, 24, 0.8);
-    top: -9px;
-    left: 50%;
-    transform: translateX(-50%) rotate(-3deg);
-    border: 1px solid rgba(133, 88, 62, 0.25);
-}
-.hair-display img {
-    position: relative;
-}
-.hair-display {
-    position: relative;
-}
-.hair-display::before {
-    content: "";
-    position: absolute;
-    width: 55px;
-    height: 16px;
-    background-color: var(--soft-pink);
-    top: 8px;
-    left: 50%;
-    transform: translateX(-50%) rotate(5deg);
-    z-index: 5;
-    opacity: 0.85;
-}
-.hair-decor {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-}
+    .main-photo img {
+        width: 145px;
+        height: 210px;
+        padding: 8px 8px 28px;
+    }
 
-.hair-decor span {
-    position: absolute;
-    display: block;
-}
+    .note-tape {
+        width: 50px;
+        height: 15px;
+    }
 
-/* Flower */
-.hair-decor .flower {
-    color: var(--sage-green);
-    font-size: 30px;
-    top: 5px;
-    left: 28%;
-    transform: rotate(-15deg);
-}
+    .photo-tape {
+        width: 60px;
+        height: 18px;
+    }
 
-/* Heart */
-.hair-decor .heart {
-    color: var(--dusty-pink);
-    font-size: 35px;
-    right: 27%;
-    top: 20px;
-    transform: rotate(12deg);
-}
+    .photo-flower {
+        font-size: 27px;
+    }
 
-/* Bow */
-.hair-decor .bow {
-    font-size: 30px;
-    right: 18%;
-    bottom: 5px;
-    transform: rotate(8deg);
-}
+    .hair-heart,
+    .hair-spark,
+    .hair-flower,
+    .hair-curl {
+        display: none;
+    }
 
-/* Curly line */
-.hair-decor .curl {
-    color: var(--caramel);
-    font-size: 38px;
-    left: 19%;
-    bottom: 8px;
-    transform: rotate(-12deg);
-}
-.collage-tape {
-    position: absolute;
-    width: 55px;
-    height: 16px;
-    z-index: 4;
-    opacity: 0.9;
-    border: 1px solid rgba(133, 88, 62, 0.2);
-}
+    .curl-collage {
+        margin-left: -8px;
+        margin-right: -8px;
+        padding: 45px 10px 55px;
+    }
 
-/* Pink tape */
-.tape-one {
-    background-color: var(--soft-pink);
-    top: 14px;
-    left: 27%;
-    transform: rotate(-8deg);
-}
+    .curl-collage h2 {
+        font-size: 30px;
+    }
 
-/* Cream tape */
-.tape-two {
-    background-color: var(--cream);
-    top: 8px;
-    left: 47%;
-    transform: rotate(5deg);
-}
+    .curl-pictures {
+        gap: 0;
+    }
 
-/* Green tape */
-.tape-three {
-    background-color: var(--light-sage);
-    top: 15px;
-    right: 25%;
-    transform: rotate(-4deg);
-}
-.home-section {
-    position: relative;
-    overflow: hidden;
-}
+    .photo-card {
+        padding: 6px 6px 22px;
+    }
 
-.torn-paper {
-    width: 430px;
-    height: 115px;
-    background-color: #DDE3C7;
-    margin: -45px 0 5px -45px;
-    transform: rotate(-2deg);
+    .photo-card img {
+        width: 105px;
+        height: 135px;
+    }
 
-    clip-path: polygon(
-        0 0,
-        100% 0,
-        100% 55%,
-        92% 70%,
-        84% 56%,
-        75% 74%,
-        65% 58%,
-        55% 76%,
-        45% 60%,
-        35% 74%,
-        25% 57%,
-        15% 72%,
-        7% 58%,
-        0 70%
-    );
+    .card-one {
+        margin-right: -7px;
+    }
+
+    .card-three {
+        margin-left: -7px;
+    }
+
+    .collage-tape {
+        width: 45px;
+        height: 14px;
+    }
+
+    .gingham-top {
+        width: 220px;
+        height: 110px;
+    }
+
+    .sage-top {
+        width: 190px;
+        height: 110px;
+    }
+
+    .collage-heart,
+    .collage-flower,
+    .collage-curl {
+        opacity: .8;
+    }
+
 }
