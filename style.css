@@ -6646,3 +6646,37 @@ nav a:hover {
         min-height: 490px !important;
     }
 }
+/* ==========================================
+   TABLET + COMPUTER STAR FIX ONLY
+   PHONE STAYS EXACTLY THE SAME
+   ========================================== */
+
+@media (min-width: 701px) {
+
+    /* LEFT STAR — smaller and farther left */
+    .doll-star-left {
+        width: 105px !important;
+
+        left: 45px !important;
+        top: 115px !important;
+
+        transform: rotate(-15deg) !important;
+
+        z-index: 12 !important;
+    }
+
+
+    /* RIGHT STAR — smaller + make sure it shows */
+    .doll-star-right {
+        display: block !important;
+
+        width: 115px !important;
+
+        right: 45px !important;
+        bottom: 100px !important;
+
+        transform: rotate(15deg) !important;
+
+        z-index: 12 !important;
+    }
+}
