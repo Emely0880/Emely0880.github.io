@@ -404,3 +404,35 @@ h1 {
     bottom: 8px;
     transform: rotate(-12deg);
 }
+.collage-tape {
+    position: absolute;
+    width: 55px;
+    height: 16px;
+    z-index: 4;
+    opacity: 0.9;
+    border: 1px solid rgba(133, 88, 62, 0.2);
+}
+
+/* Pink tape */
+.tape-one {
+    background-color: var(--soft-pink);
+    top: 14px;
+    left: 27%;
+    transform: rotate(-8deg);
+}
+
+/* Cream tape */
+.tape-two {
+    background-color: var(--cream);
+    top: 8px;
+    left: 47%;
+    transform: rotate(5deg);
+}
+
+/* Green tape */
+.tape-three {
+    background-color: var(--light-sage);
+    top: 15px;
+    right: 25%;
+    transform: rotate(-4deg);
+}
