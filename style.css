@@ -5094,3 +5094,1148 @@ nav a:hover {
         font-size: 20px;
     }
 }
+/* ==========================================================
+   LINKS PAGE
+   HOME + ABOUT ME SCRAPBOOK COMBINATION
+   ========================================================== */
+
+.links-page {
+    max-width: 1000px;
+    margin: 35px auto 80px;
+    padding: 80px 55px 90px;
+
+    position: relative;
+    overflow: hidden;
+
+    background-color: #FFF9ED;
+    color: #4D2D22;
+
+    border: 2px solid #85583E;
+    border-radius: 25px;
+
+    box-shadow:
+        8px 9px 0 #E8A6AE,
+        14px 15px 0 #AEBB91;
+}
+
+
+/* tiny paper texture */
+
+.links-page::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        radial-gradient(
+            rgba(133, 88, 62, 0.12) 1px,
+            transparent 1px
+        );
+
+    background-size: 9px 9px;
+
+    opacity: .25;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+.links-decor {
+    position: absolute;
+
+    max-width: none;
+
+    object-fit: contain;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   BACKGROUND CORNERS
+   ========================================================== */
+
+.links-pink-corner {
+    position: absolute;
+
+    width: 500px;
+    height: 230px;
+
+    top: -60px;
+    left: -120px;
+
+    background-color: #E9A7AD;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.65) 50%,
+            transparent 50%
+        ),
+        linear-gradient(
+            rgba(255,255,255,.65) 50%,
+            transparent 50%
+        );
+
+    background-size: 32px 32px;
+
+    transform: rotate(-6deg);
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        98% 80%,
+        90% 73%,
+        82% 82%,
+        72% 74%,
+        62% 83%,
+        52% 75%,
+        42% 84%,
+        31% 74%,
+        20% 82%,
+        10% 75%,
+        0 82%
+    );
+
+    z-index: 1;
+}
+
+
+.links-sage-corner {
+    position: absolute;
+
+    width: 500px;
+    height: 240px;
+
+    top: -55px;
+    right: -130px;
+
+    background: #DDE3C7;
+
+    transform: rotate(6deg);
+
+    z-index: 1;
+}
+
+
+/* ==========================================================
+   TORN PAPER SCRAPS
+   ========================================================== */
+
+.links-paper-scrap {
+    position: absolute;
+
+    background: #F2E3D1;
+
+    opacity: .85;
+
+    z-index: 2;
+
+    clip-path: polygon(
+        2% 4%,
+        97% 0,
+        100% 93%,
+        91% 97%,
+        82% 94%,
+        72% 100%,
+        62% 95%,
+        51% 99%,
+        40% 94%,
+        30% 99%,
+        19% 95%,
+        8% 100%,
+        0 94%
+    );
+}
+
+
+.scrap-link-one {
+    width: 360px;
+    height: 190px;
+
+    top: 610px;
+    left: -160px;
+
+    transform: rotate(-13deg);
+}
+
+
+.scrap-link-two {
+    width: 430px;
+    height: 210px;
+
+    right: -180px;
+    top: 1050px;
+
+    transform: rotate(10deg);
+}
+
+
+/* ==========================================================
+   TOP DECORATIONS
+   ========================================================== */
+
+.links-bow {
+    width: 470px;
+
+    top: -25px;
+    right: -130px;
+
+    transform: rotate(7deg);
+
+    z-index: 15;
+}
+
+
+.links-pin {
+    width: 210px;
+
+    top: 245px;
+    left: -35px;
+
+    transform: rotate(-12deg);
+
+    z-index: 16;
+}
+
+
+.top-hearts {
+    width: 180px;
+
+    top: 335px;
+    right: 35px;
+
+    transform: rotate(10deg);
+
+    z-index: 10;
+}
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.links-header {
+    position: relative;
+
+    z-index: 20;
+
+    text-align: center;
+
+    padding:
+        45px 0
+        75px;
+}
+
+
+.links-small-heading {
+    width: fit-content;
+
+    margin:
+        0 auto
+        25px;
+
+    padding:
+        10px 25px;
+
+    background: #DDE3C7;
+
+    color: #5D352A;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    box-shadow:
+        4px 5px 0 #AEBB91;
+
+    transform: rotate(-2deg);
+}
+
+
+/* BIG TITLE PAPER */
+
+.links-title-paper {
+    width: 700px;
+    max-width: 90%;
+
+    margin: auto;
+
+    padding:
+        45px 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    position: relative;
+
+    background: #F8D9DD;
+
+    border: 2px solid #D98F9D;
+
+    box-shadow:
+        8px 9px 0 #AEBB91;
+
+    transform: rotate(1deg);
+
+    clip-path: polygon(
+        2% 5%,
+        98% 0,
+        100% 91%,
+        94% 96%,
+        86% 93%,
+        78% 98%,
+        69% 94%,
+        59% 99%,
+        49% 94%,
+        39% 99%,
+        29% 94%,
+        19% 99%,
+        10% 94%,
+        0 98%
+    );
+}
+
+
+.links-title-paper h1 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 54px;
+
+    color: #6D2929;
+}
+
+
+.links-title-paper span {
+    font-size: 30px;
+
+    color: #85583E;
+}
+
+
+.links-subtitle {
+    margin-top: 28px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+    font-style: italic;
+
+    color: #85583E;
+}
+
+
+/* ==========================================================
+   CAMERA + CURLY DOLL
+   ========================================================== */
+
+.camera-doll-section {
+    position: relative;
+
+    z-index: 20;
+
+    min-height: 560px;
+
+    margin-bottom: 60px;
+}
+
+
+.camera-doll-group {
+    position: relative;
+
+    width: 600px;
+    height: 480px;
+
+    margin: auto;
+}
+
+
+/* CAMERA */
+
+.links-camera {
+    position: absolute;
+
+    width: 580px;
+    max-width: none;
+
+    left: 50%;
+    bottom: 0;
+
+    transform:
+        translateX(-50%)
+        rotate(-2deg);
+
+    object-fit: contain;
+
+    z-index: 10;
+}
+
+
+/* DOLL INSIDE CAMERA */
+
+.links-curly-doll {
+    position: absolute;
+
+    width: 235px;
+    height: 265px;
+
+    left: 50%;
+    top: 80px;
+
+    transform:
+        translateX(-50%)
+        rotate(1deg);
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    z-index: 8;
+}
+
+
+/* NOTE UNDER CAMERA */
+
+.camera-note {
+    width: 300px;
+
+    margin:
+        -15px auto
+        0;
+
+    padding:
+        25px 30px;
+
+    position: relative;
+
+    background: #FFF4E8;
+
+    border: 2px solid #B78B74;
+
+    box-shadow:
+        6px 7px 0 #E8A6AE;
+
+    text-align: center;
+
+    transform: rotate(-2deg);
+
+    z-index: 20;
+}
+
+
+.camera-note p {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 18px;
+    font-style: italic;
+
+    color: #6D2929;
+}
+
+
+.camera-note-tape {
+    position: absolute;
+
+    width: 100px;
+    height: 27px;
+
+    top: -15px;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        rotate(4deg);
+
+    background: #AEBB91;
+
+    opacity: .9;
+}
+
+
+/* ==========================================================
+   LINKS SECTION
+   ========================================================== */
+
+.favorite-links-section {
+    position: relative;
+
+    z-index: 20;
+
+    padding:
+        80px 20px
+        120px;
+
+    margin:
+        20px -20px
+        70px;
+
+    background: #F5E7D7;
+
+    clip-path: polygon(
+        0 3%,
+        8% 1%,
+        16% 4%,
+        25% 1%,
+        34% 4%,
+        43% 1%,
+        52% 3%,
+        62% 1%,
+        72% 4%,
+        82% 1%,
+        91% 3%,
+        100% 1%,
+        100% 97%,
+        91% 95%,
+        82% 98%,
+        72% 95%,
+        62% 98%,
+        52% 95%,
+        42% 98%,
+        32% 95%,
+        22% 98%,
+        12% 95%,
+        3% 98%,
+        0 96%
+    );
+}
+
+
+.favorite-links-title {
+    width: fit-content;
+
+    margin:
+        0 auto
+        60px;
+
+    padding:
+        15px 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: #FFF9ED;
+
+    border: 2px solid #D98F9D;
+
+    box-shadow:
+        5px 6px 0 #AEBB91;
+
+    transform: rotate(-1deg);
+}
+
+
+.favorite-links-title h2 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 35px;
+
+    color: #6D2929;
+}
+
+
+.favorite-links-title span {
+    font-size: 22px;
+
+    color: #B84B4B;
+}
+
+
+/* ==========================================================
+   THREE LINK CARDS
+   ========================================================== */
+
+.links-card-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 28px;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+.favorite-link-card {
+    width: 235px;
+    min-height: 290px;
+
+    padding:
+        42px 25px
+        30px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+
+    color: #4D2D22;
+
+    border: 2px solid #B78B74;
+
+    box-shadow:
+        6px 7px 0
+        rgba(77,45,34,.18);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+
+.favorite-link-card:hover {
+    transform:
+        translateY(-8px)
+        rotate(0deg);
+
+    box-shadow:
+        9px 11px 0
+        rgba(77,45,34,.18);
+}
+
+
+.naturally-card {
+    background: #E5E9D4;
+
+    transform: rotate(-3deg);
+}
+
+
+.pinterest-card {
+    background: #F6DDE0;
+
+    transform: rotate(1deg);
+}
+
+
+.tiktok-card {
+    background: #FFF8EC;
+
+    transform: rotate(3deg);
+}
+
+
+.link-number {
+    position: absolute;
+
+    top: 13px;
+    right: 15px;
+
+    font-family: Georgia, serif;
+
+    font-size: 14px;
+
+    color: #85583E;
+}
+
+
+.link-icon {
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-size: 30px;
+}
+
+
+.favorite-link-card h3 {
+    margin:
+        0 0
+        15px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 24px;
+
+    color: #6D2929;
+}
+
+
+.favorite-link-card p {
+    margin:
+        0 0
+        25px;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    flex-grow: 1;
+}
+
+
+.visit-link {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-weight: bold;
+
+    color: #85583E;
+}
+
+
+/* ==========================================================
+   CARD TAPES
+   ========================================================== */
+
+.card-tape {
+    position: absolute;
+
+    width: 90px;
+    height: 25px;
+
+    top: -13px;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        rotate(-4deg);
+
+    opacity: .92;
+}
+
+
+.sage-link-tape {
+    background: #AEBB91;
+}
+
+
+.pink-link-tape {
+    background: #D98F9D;
+
+    transform:
+        translateX(-50%)
+        rotate(5deg);
+}
+
+
+.cream-link-tape {
+    background-color: #FFF7EA;
+
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            #B84B4B 0,
+            #B84B4B 9px,
+            #FFF7EA 9px,
+            #FFF7EA 18px
+        );
+}
+
+
+/* ==========================================================
+   HEART DOODLES
+   ========================================================== */
+
+.middle-hearts {
+    width: 190px;
+
+    right: -45px;
+    bottom: 5px;
+
+    transform: rotate(12deg);
+
+    z-index: 8;
+}
+
+
+/* ==========================================================
+   SIMPLE BOTTOM
+   ========================================================== */
+
+.links-bottom {
+    min-height: 470px;
+
+    position: relative;
+
+    z-index: 20;
+
+    padding-top: 70px;
+}
+
+
+/* FLOWER BOUQUET */
+
+.bottom-bouquet {
+    width: 370px;
+
+    left: -60px;
+    bottom: -40px;
+
+    transform: rotate(-8deg);
+
+    z-index: 12;
+}
+
+
+/* CENTER NOTE */
+
+.bottom-links-note {
+    width: 390px;
+
+    margin:
+        60px auto
+        0;
+
+    padding:
+        42px 40px
+        35px;
+
+    position: relative;
+
+    background: #F8D9DD;
+
+    border: 2px solid #D98F9D;
+
+    box-shadow:
+        7px 8px 0 #AEBB91;
+
+    text-align: center;
+
+    transform: rotate(2deg);
+
+    z-index: 20;
+}
+
+
+.bottom-links-note h3 {
+    margin:
+        0 0
+        12px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 29px;
+
+    color: #6D2929;
+}
+
+
+.bottom-links-note p {
+    margin: 0;
+
+    line-height: 1.6;
+
+    color: #4D2D22;
+}
+
+
+.bottom-links-tape {
+    position: absolute;
+
+    width: 120px;
+    height: 30px;
+
+    top: -16px;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        rotate(-4deg);
+
+    background: #AEBB91;
+}
+
+
+.bottom-note-heart {
+    position: absolute;
+
+    top: 10px;
+    left: 20px;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    color: #B84B4B;
+}
+
+
+.bottom-curl {
+    display: block;
+
+    margin-top: 18px;
+
+    font-size: 23px;
+
+    color: #85583E;
+}
+
+
+.bottom-hearts-links {
+    width: 170px;
+
+    right: 30px;
+    bottom: 30px;
+
+    transform: rotate(-8deg);
+
+    z-index: 12;
+}
+
+
+/* ==========================================================
+   PHONE / SMALL SCREEN
+   ========================================================== */
+
+@media (max-width: 700px) {
+
+    .links-page {
+        margin:
+            20px 12px
+            55px;
+
+        padding:
+            65px 18px
+            70px;
+    }
+
+
+    /* TOP */
+
+    .links-bow {
+        width: 310px;
+
+        right: -120px;
+        top: -15px;
+    }
+
+
+    .links-pin {
+        width: 130px;
+
+        left: -45px;
+        top: 235px;
+    }
+
+
+    .top-hearts {
+        width: 110px;
+
+        right: -20px;
+        top: 320px;
+    }
+
+
+    /* TITLE */
+
+    .links-header {
+        padding-bottom: 50px;
+    }
+
+
+    .links-title-paper {
+        width: 90%;
+
+        padding:
+            35px 15px;
+
+        gap: 10px;
+    }
+
+
+    .links-title-paper h1 {
+        font-size: 34px;
+    }
+
+
+    .links-title-paper span {
+        font-size: 20px;
+    }
+
+
+    .links-subtitle {
+        font-size: 14px;
+    }
+
+
+    /* CAMERA + DOLL */
+
+    .camera-doll-section {
+        min-height: 410px;
+    }
+
+
+    .camera-doll-group {
+        width: 100%;
+        height: 330px;
+    }
+
+
+    .links-camera {
+        width: 390px;
+    }
+
+
+    .links-curly-doll {
+        width: 155px;
+        height: 175px;
+
+        top: 67px;
+    }
+
+
+    .camera-note {
+        width: 220px;
+
+        padding:
+            20px 20px;
+    }
+
+
+    .camera-note p {
+        font-size: 15px;
+    }
+
+
+    /* LINKS */
+
+    .favorite-links-section {
+        padding:
+            70px 10px
+            100px;
+    }
+
+
+    .favorite-links-title {
+        padding:
+            12px 20px;
+
+        margin-bottom: 45px;
+    }
+
+
+    .favorite-links-title h2 {
+        font-size: 27px;
+    }
+
+
+    .links-card-container {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 45px;
+    }
+
+
+    .favorite-link-card {
+        width: 78%;
+        min-height: 230px;
+
+        padding:
+            38px 25px
+            27px;
+    }
+
+
+    .naturally-card {
+        transform: rotate(-2deg);
+    }
+
+
+    .pinterest-card {
+        transform: rotate(1deg);
+    }
+
+
+    .tiktok-card {
+        transform: rotate(2deg);
+    }
+
+
+    .middle-hearts {
+        width: 120px;
+
+        right: -35px;
+    }
+
+
+    /* BOTTOM */
+
+    .links-bottom {
+        min-height: 500px;
+
+        padding-top: 45px;
+    }
+
+
+    .bottom-bouquet {
+        width: 245px;
+
+        left: -90px;
+        bottom: -25px;
+    }
+
+
+    .bottom-links-note {
+        width: 230px;
+
+        margin:
+            55px auto
+            0;
+
+        padding:
+            35px 22px
+            28px;
+    }
+
+
+    .bottom-links-note h3 {
+        font-size: 23px;
+    }
+
+
+    .bottom-links-note p {
+        font-size: 14px;
+    }
+
+
+    .bottom-hearts-links {
+        width: 105px;
+
+        right: -20px;
+        bottom: 45px;
+    }
+}
