@@ -1042,79 +1042,81 @@ nav a:hover {
 
 /* ===== EXTRA LARGE SCRAPBOOK DECORATIONS ===== */
 
-/* Pink paper clip - top left */
+/* Pink paper clip */
 .paperclip {
-    width: 280px !important;
+    width: 320px !important;
     max-width: none !important;
     height: auto !important;
-    top: -15px !important;
-    left: -45px !important;
+    top: -20px !important;
+    left: -55px !important;
 }
 
-/* Pink bow - top right */
+/* Big pink bow */
 .top-bow {
-    width: 380px !important;
+    width: 440px !important;
     max-width: none !important;
     height: auto !important;
-    top: -35px !important;
-    right: -65px !important;
+    top: -45px !important;
+    right: -80px !important;
 }
 
-/* White flower branch beside bow */
+/* White flower branch */
 .white-flower {
-    width: 270px !important;
+    width: 330px !important;
     max-width: none !important;
     height: auto !important;
-    top: 130px !important;
-    right: -55px !important;
+    top: 125px !important;
+    right: -65px !important;
 }
 
 /* Long pink flower */
 .pink-long-flower {
-    width: 280px !important;
+    width: 340px !important;
     max-width: none !important;
     height: auto !important;
-    left: -65px !important;
+    left: -80px !important;
+    bottom: 5px !important;
 }
 
 /* Falling pink flowers */
 .falling-flowers {
-    width: 280px !important;
+    width: 330px !important;
     max-width: none !important;
     height: auto !important;
-    left: -45px !important;
-    bottom: 15px !important;
+    left: -60px !important;
+    bottom: 10px !important;
 }
 
-/* Flower attached to main hair photo */
+/* Flower on the curly-hair Polaroid */
 .photo-real-flower {
-    width: 125px !important;
-    height: 125px !important;
+    width: 145px !important;
+    height: 145px !important;
     max-width: none !important;
 }
 
 /* Torn paper scraps */
 .scrap-one {
-    width: 330px !important;
+    width: 390px !important;
     max-width: none !important;
 }
 
 .scrap-two {
-    width: 300px !important;
+    width: 350px !important;
     max-width: none !important;
 }
 
 .scrap-three {
-    width: 330px !important;
+    width: 390px !important;
     max-width: none !important;
 }
 
 .scrap-four {
-    width: 320px !important;
+    width: 370px !important;
     max-width: none !important;
 }
 
 .scrap-five {
-    width: 350px !important;
+    width: 400px !important;
     max-width: none !important;
 }
+        
