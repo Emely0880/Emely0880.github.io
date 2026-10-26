@@ -6392,4 +6392,78 @@ nav a:hover {
         min-height: 500px !important;
     }
 } 
+/* ==========================================
+   FIX DOLL INSIDE PHOTO FRAME
+   ========================================== */
+
+.links-frame-group .links-curly-doll {
+    position: absolute !important;
+
+    /* Center the doll inside the frame opening */
+    left: 50% !important;
+    top: 50% !important;
+
+    /* Make her fit inside the white opening */
+    width: 420px !important;
+    height: 420px !important;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(0deg) !important;
+
+    object-fit: cover !important;
+
+    z-index: 5 !important;
+}
+
+
+/* Keep frame directly centered over doll */
+
+.links-photo-frame {
+    position: absolute !important;
+
+    left: 50% !important;
+    top: 50% !important;
+
+    width: 620px !important;
+    height: 570px !important;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(0deg) !important;
+
+    object-fit: contain !important;
+
+    z-index: 10 !important;
+}
+
+
+/* PHONE / SMALL SCREEN */
+
+@media (max-width: 700px) {
+
+    .links-frame-group .links-curly-doll {
+        left: 50% !important;
+        top: 50% !important;
+
+        width: 285px !important;
+        height: 285px !important;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(0deg) !important;
+    }
+
+    .links-photo-frame {
+        left: 50% !important;
+        top: 50% !important;
+
+        width: 440px !important;
+        height: 420px !important;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(0deg) !important;
+    }
+}
 
