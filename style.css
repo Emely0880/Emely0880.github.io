@@ -6505,3 +6505,144 @@ nav a:hover {
         z-index: 10 !important;
     }
 }
+/* ==========================================================
+   LINKS — DOLL + TWO STARS
+   ========================================================== */
+
+
+/* REMOVE OLD CAMERA + FRAME */
+
+.links-camera,
+.links-photo-frame,
+.links-frame-group {
+    display: none !important;
+}
+
+
+/* DOLL + STAR AREA */
+
+.links-doll-stars {
+    position: relative !important;
+
+    width: 700px !important;
+    max-width: 100% !important;
+
+    height: 500px !important;
+
+    margin: 0 auto !important;
+}
+
+
+/* CURLY HAIR DOLL */
+
+.links-curly-doll-simple {
+    position: absolute !important;
+
+    width: 360px !important;
+    height: 390px !important;
+
+    left: 50% !important;
+    top: 50% !important;
+
+    transform:
+        translate(-50%, -50%) !important;
+
+    object-fit: cover !important;
+
+    border-radius: 12px !important;
+
+    z-index: 10 !important;
+
+    box-shadow:
+        7px 8px 0 #E8A6AE,
+        12px 13px 0 #AEBB91 !important;
+}
+
+
+/* LEFT STAR */
+
+.doll-star-left {
+    display: block !important;
+
+    width: 180px !important;
+
+    left: 15px !important;
+    top: 80px !important;
+
+    transform: rotate(-15deg) !important;
+
+    z-index: 12 !important;
+}
+
+
+/* RIGHT STAR */
+
+.doll-star-right {
+    display: block !important;
+
+    width: 210px !important;
+
+    right: 0 !important;
+    bottom: 55px !important;
+
+    transform: rotate(15deg) !important;
+
+    z-index: 12 !important;
+}
+
+
+/* KEEP SECTION CLEAN */
+
+.camera-doll-section {
+    min-height: 610px !important;
+}
+
+
+/* ==========================================================
+   PHONE
+   ========================================================== */
+
+@media (max-width: 700px) {
+
+    .links-doll-stars {
+        width: 100% !important;
+        height: 390px !important;
+    }
+
+
+    .links-curly-doll-simple {
+        width: 245px !important;
+        height: 275px !important;
+
+        left: 50% !important;
+        top: 50% !important;
+
+        transform:
+            translate(-50%, -50%) !important;
+    }
+
+
+    .doll-star-left {
+        width: 105px !important;
+
+        left: -15px !important;
+        top: 55px !important;
+
+        transform: rotate(-15deg) !important;
+    }
+
+
+    .doll-star-right {
+        width: 125px !important;
+
+        right: -20px !important;
+        bottom: 40px !important;
+
+        transform: rotate(15deg) !important;
+    }
+
+
+    .camera-doll-section {
+        min-height: 490px !important;
+    }
+}
