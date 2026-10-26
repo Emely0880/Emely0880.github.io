@@ -6239,20 +6239,22 @@ nav a:hover {
         bottom: 45px;
     }
 /* ==========================================
-   CAMERA ONLY
-   LARGE + SIDEWAYS + LOWER
+   CAMERA ONLY — LARGE + LAYING DOWN
    ========================================== */
 
 .links-camera {
-    width: 1900px !important;
+    width: 2300px !important;
     max-width: none !important;
 
+    position: absolute !important;
+
     left: 50% !important;
-    bottom: -230px !important;
+    top: 50% !important;
+    bottom: auto !important;
 
     transform:
-        translateX(-50%)
-        rotate(-90deg) !important;
+        translate(-50%, -50%)
+        rotate(90deg) !important;
 
     transform-origin: center center !important;
 
@@ -6267,16 +6269,15 @@ nav a:hover {
 @media (max-width: 700px) {
 
     .links-camera {
-        width: 1250px !important;
+        width: 1550px !important;
         max-width: none !important;
 
         left: 50% !important;
-        bottom: -155px !important;
+        top: 55% !important;
+        bottom: auto !important;
 
         transform:
-            translateX(-50%)
-            rotate(-90deg) !important;
-
-        transform-origin: center center !important;
+            translate(-50%, -50%)
+            rotate(90deg) !important;
     }
 }
