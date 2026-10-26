@@ -6238,11 +6238,13 @@ nav a:hover {
         right: -20px;
         bottom: 45px;
     }
-}/* CAMERA ONLY — 2X BIGGER + MORE HORIZONTAL */
+/* CAMERA ONLY — SMALLER + LOWER + HORIZONTAL */
 
 .links-camera {
-    width: 1800px !important;
+    width: 1500px !important;
     max-width: none !important;
+
+    bottom: -130px !important;
 
     transform:
         translateX(-50%)
@@ -6254,8 +6256,10 @@ nav a:hover {
 
 @media (max-width: 700px) {
     .links-camera {
-        width: 1180px !important;
+        width: 950px !important;
         max-width: none !important;
+
+        bottom: -95px !important;
 
         transform:
             translateX(-50%)
