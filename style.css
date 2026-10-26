@@ -4791,3 +4791,82 @@ nav a:hover {
         padding: 10px 16px;
     }
 }
+/* ==========================================
+   EXTRA LARGE ABOUT ME TITLE FRAME
+   ========================================== */
+
+.about-title-box {
+    width: 950px !important;
+    height: 400px !important;
+    max-width: 100% !important;
+
+    margin: -45px auto -30px !important;
+
+    position: relative !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.title-frame-image {
+    position: absolute !important;
+
+    width: 1050px !important;
+    height: 430px !important;
+    max-width: none !important;
+
+    left: 50% !important;
+    top: 50% !important;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1.25) !important;
+
+    object-fit: contain !important;
+
+    z-index: 1 !important;
+}
+
+.about-title-box h1 {
+    position: relative !important;
+
+    z-index: 5 !important;
+
+    font-size: 62px !important;
+
+    margin: 0 !important;
+
+    text-align: center !important;
+}
+
+
+/* PHONE / IPAD SMALL SCREEN */
+
+@media (max-width: 700px) {
+
+    .about-title-box {
+        width: 100% !important;
+        height: 300px !important;
+
+        margin: -35px auto -25px !important;
+    }
+
+    .title-frame-image {
+        width: 650px !important;
+        height: 330px !important;
+
+        max-width: none !important;
+
+        left: 50% !important;
+        top: 50% !important;
+
+        transform:
+            translate(-50%, -50%)
+            scale(1.18) !important;
+    }
+
+    .about-title-box h1 {
+        font-size: 42px !important;
+    }
+}
