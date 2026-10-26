@@ -4792,48 +4792,55 @@ nav a:hover {
     }
 }
 /* ==========================================
-   EXTRA LARGE ABOUT ME TITLE FRAME
+   HUGE ABOUT ME TITLE FRAME
+   Frame is about 2X bigger than the title
    ========================================== */
 
 .about-title-box {
-    width: 950px !important;
-    height: 400px !important;
-    max-width: 100% !important;
+    width: 100% !important;
+    height: 520px !important;
 
-    margin: -45px auto -30px !important;
+    margin: -70px auto -65px !important;
 
     position: relative !important;
 
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+
+    overflow: visible !important;
 }
+
+
+/* HUGE FRAME */
 
 .title-frame-image {
     position: absolute !important;
 
-    width: 1050px !important;
-    height: 430px !important;
+    width: 1350px !important;
+    height: 650px !important;
+
     max-width: none !important;
 
     left: 50% !important;
     top: 50% !important;
 
-    transform:
-        translate(-50%, -50%)
-        scale(1.25) !important;
+    transform: translate(-50%, -50%) !important;
 
     object-fit: contain !important;
 
     z-index: 1 !important;
 }
 
+
+/* KEEP TITLE MUCH SMALLER THAN FRAME */
+
 .about-title-box h1 {
     position: relative !important;
 
     z-index: 5 !important;
 
-    font-size: 62px !important;
+    font-size: 58px !important;
 
     margin: 0 !important;
 
@@ -4841,32 +4848,36 @@ nav a:hover {
 }
 
 
-/* PHONE / IPAD SMALL SCREEN */
+/* ==========================================
+   PHONE
+   ========================================== */
 
 @media (max-width: 700px) {
 
     .about-title-box {
         width: 100% !important;
-        height: 300px !important;
+        height: 360px !important;
 
-        margin: -35px auto -25px !important;
+        margin: -50px auto -45px !important;
+
+        overflow: visible !important;
     }
 
+
     .title-frame-image {
-        width: 650px !important;
-        height: 330px !important;
+        width: 780px !important;
+        height: 440px !important;
 
         max-width: none !important;
 
         left: 50% !important;
         top: 50% !important;
 
-        transform:
-            translate(-50%, -50%)
-            scale(1.18) !important;
+        transform: translate(-50%, -50%) !important;
     }
 
+
     .about-title-box h1 {
-        font-size: 42px !important;
+        font-size: 40px !important;
     }
 }
