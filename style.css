@@ -327,3 +327,17 @@ h1 {
         width: 100px;
         height: 130px;
     }
+.sticky-note {
+    position: relative;
+}
+.sticky-note::before {
+    conntent: "";
+    position: absolute;
+    width: 45px;
+    height: 14px;
+    background-color: rgba(255, 247, 24, 0.8);
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+    border: 1px solid rgba(133, 88, 62, 0.25);
+}
