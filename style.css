@@ -3172,3 +3172,1622 @@ nav a:hover {
         padding: 10px 16px;
     }
 }
+/* ==========================================================
+   ABOUT ME PAGE — STRAWBERRY SCRAPBOOK
+   ========================================================== */
+
+.about-page {
+    max-width: 1000px;
+    margin: 35px auto 80px;
+    padding: 80px 55px 100px;
+
+    position: relative;
+    overflow: hidden;
+
+    background-color: #FFF9ED;
+    color: #4D2D22;
+
+    border: 2px solid #85583E;
+    border-radius: 25px;
+
+    box-shadow:
+        8px 9px 0 #E8A6AE,
+        14px 15px 0 #AEBB91;
+}
+
+
+.about-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        radial-gradient(
+            rgba(133, 88, 62, 0.11) 1px,
+            transparent 1px
+        );
+
+    background-size: 9px 9px;
+    opacity: .28;
+
+    pointer-events: none;
+}
+
+
+.about-decor {
+    position: absolute;
+    object-fit: contain;
+    max-width: none;
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   TOP BACKGROUND PAPERS
+   ========================================================== */
+
+.about-gingham-corner {
+    position: absolute;
+
+    width: 420px;
+    height: 190px;
+
+    top: -40px;
+    left: -70px;
+
+    transform: rotate(-6deg);
+
+    background-color: #E9A7AD;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.65) 50%,
+            transparent 50%
+        ),
+        linear-gradient(
+            rgba(255,255,255,.65) 50%,
+            transparent 50%
+        );
+
+    background-size: 30px 30px;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        97% 72%,
+        90% 66%,
+        82% 76%,
+        72% 68%,
+        63% 79%,
+        52% 68%,
+        41% 77%,
+        31% 67%,
+        20% 78%,
+        10% 69%,
+        0 75%
+    );
+
+    z-index: 1;
+}
+
+
+.about-sage-corner {
+    position: absolute;
+
+    width: 430px;
+    height: 215px;
+
+    top: -45px;
+    right: -80px;
+
+    background: #DDE3C7;
+
+    transform: rotate(5deg);
+
+    z-index: 1;
+}
+
+
+/* ==========================================================
+   TOP DECORATIONS
+   ========================================================== */
+
+.about-red-bow {
+    width: 590px;
+
+    top: -5px;
+    right: -175px;
+
+    transform: rotate(7deg);
+
+    z-index: 16;
+}
+
+
+.strawberry-branch {
+    width: 500px;
+
+    top: 130px;
+    left: -150px;
+
+    transform: rotate(-12deg);
+
+    z-index: 12;
+}
+
+
+.about-paperclip {
+    width: 280px;
+
+    top: 300px;
+    right: -60px;
+
+    transform: rotate(12deg);
+
+    z-index: 13;
+}
+
+
+.about-star {
+    width: 150px;
+
+    top: 400px;
+    right: 40px;
+
+    transform: rotate(12deg);
+
+    z-index: 10;
+}
+
+
+/* ==========================================================
+   STRIPED SCRAP PAPERS
+   ========================================================== */
+
+.stripe-paper {
+    z-index: 2;
+    opacity: .96;
+}
+
+
+.stripe-one {
+    width: 650px;
+
+    top: 700px;
+    left: -240px;
+
+    transform: rotate(-10deg);
+}
+
+
+.stripe-two {
+    width: 700px;
+
+    bottom: 180px;
+    right: -270px;
+
+    transform: rotate(8deg);
+}
+
+
+/* ==========================================================
+   TITLE
+   ========================================================== */
+
+.about-header {
+    position: relative;
+
+    z-index: 20;
+
+    text-align: center;
+
+    padding: 30px 0 80px;
+}
+
+
+.about-mini-title {
+    width: fit-content;
+
+    margin: 0 auto 20px;
+
+    padding: 10px 24px;
+
+    background: #DDE3C7;
+    color: #4D2D22;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    border-radius: 3px;
+
+    transform: rotate(-2deg);
+
+    box-shadow:
+        4px 5px 0 #AEBB91;
+}
+
+
+/* BIG TITLE FRAME */
+
+.about-title-box {
+    width: 760px;
+    height: 280px;
+
+    max-width: 96%;
+
+    margin: -10px auto 0;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.title-frame-image {
+    position: absolute;
+
+    width: 780px;
+    height: 290px;
+
+    max-width: none;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1.12);
+
+    object-fit: contain;
+
+    z-index: 1;
+}
+
+
+.about-title-box h1 {
+    position: relative;
+
+    z-index: 5;
+
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 58px;
+
+    color: #6D2929;
+
+    text-shadow:
+        2px 2px 0 #F4C6CB;
+}
+
+
+.about-subtitle {
+    margin-top: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+    font-style: italic;
+
+    color: #85583E;
+}
+
+
+/* ==========================================================
+   ABOUT ME INTRO
+   ========================================================== */
+
+.about-intro-section {
+    position: relative;
+
+    z-index: 20;
+
+    min-height: 390px;
+
+    padding: 40px 0 80px;
+}
+
+
+.about-intro-card {
+    width: 70%;
+
+    margin: 0 auto;
+
+    padding: 42px 50px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,246,240,.98),
+            rgba(249,219,222,.98)
+        );
+
+    border: 2px solid #D98F9D;
+
+    border-radius: 18px;
+
+    box-shadow:
+        7px 8px 0 rgba(174,187,145,.6);
+
+    transform: rotate(-1deg);
+
+    z-index: 10;
+}
+
+
+.about-intro-card h2 {
+    margin-top: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: #7C3030;
+
+    font-size: 30px;
+}
+
+
+.about-intro-card p {
+    margin-bottom: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #4D2D22;
+}
+
+
+.about-green-tape {
+    position: absolute;
+
+    width: 120px;
+    height: 30px;
+
+    top: -15px;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        rotate(3deg);
+
+    background: #AEBB91;
+
+    opacity: .92;
+}
+
+
+/* cake */
+
+.little-cake {
+    width: 210px;
+
+    left: -5px;
+    bottom: 10px;
+
+    transform: rotate(-8deg);
+
+    z-index: 13;
+}
+
+
+/* kiss */
+
+.kiss-mark {
+    width: 165px;
+
+    right: 20px;
+    top: 10px;
+
+    transform: rotate(12deg);
+
+    z-index: 13;
+}
+
+
+/* flower */
+
+.intro-flower {
+    width: 250px;
+
+    right: -55px;
+    bottom: -5px;
+
+    transform: rotate(15deg);
+
+    z-index: 12;
+}
+
+
+/* ==========================================================
+   HAIR JOURNEY
+   ========================================================== */
+
+.hair-journey-section {
+    position: relative;
+
+    z-index: 20;
+
+    margin: 20px -20px 70px;
+
+    padding: 90px 45px 130px;
+
+    background: #E8B0B6;
+
+    box-shadow:
+        8px 9px 0 rgba(174,187,145,.65);
+
+    clip-path: polygon(
+        0 3%,
+        7% 1%,
+        15% 4%,
+        24% 1%,
+        33% 3%,
+        42% 1%,
+        52% 4%,
+        61% 1%,
+        70% 3%,
+        80% 1%,
+        90% 4%,
+        100% 2%,
+        100% 97%,
+        91% 95%,
+        82% 98%,
+        73% 95%,
+        63% 98%,
+        53% 95%,
+        43% 98%,
+        33% 95%,
+        23% 98%,
+        13% 95%,
+        4% 98%,
+        0 96%
+    );
+}
+
+
+.journey-paper-title {
+    width: fit-content;
+
+    margin: 0 auto;
+
+    padding: 14px 35px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    background: #FFF9ED;
+
+    border: 2px solid #AEBB91;
+
+    box-shadow:
+        5px 6px 0 #AEBB91;
+
+    transform: rotate(-1deg);
+}
+
+
+.journey-paper-title h2 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 38px;
+
+    color: #6D2929;
+}
+
+
+.journey-paper-title span {
+    font-size: 25px;
+}
+
+
+.journey-subtitle {
+    text-align: center;
+
+    max-width: 620px;
+
+    margin: 25px auto 60px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-style: italic;
+
+    color: #4D2D22;
+}
+
+
+/* ==========================================================
+   TOP TWO JOURNEY PHOTOS
+   ========================================================== */
+
+.journey-top-row {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 130px;
+
+    position: relative;
+
+    z-index: 10;
+
+    margin-bottom: 100px;
+}
+
+
+.journey-item {
+    position: relative;
+
+    text-align: center;
+}
+
+
+.journey-item p {
+    max-width: 280px;
+
+    margin: 15px auto 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-weight: bold;
+
+    color: #5D352A;
+}
+
+
+/* small before journey */
+
+.mini-photo-frame {
+    width: 165px;
+
+    margin: auto;
+
+    padding:
+        9px 9px
+        30px;
+
+    background: #FFF9ED;
+
+    border: 1px solid #B78B74;
+
+    box-shadow:
+        5px 6px 0
+        rgba(77,45,34,.25);
+
+    transform: rotate(-6deg);
+}
+
+
+.mini-photo-frame img {
+    display: block;
+
+    width: 100%;
+    height: 145px;
+
+    object-fit: cover;
+}
+
+
+/* products */
+
+.products-photo-frame {
+    width: 280px;
+
+    padding:
+        11px 11px
+        35px;
+
+    background: #FFF9ED;
+
+    border: 1px solid #B78B74;
+
+    box-shadow:
+        6px 7px 0
+        rgba(77,45,34,.25);
+
+    transform: rotate(4deg);
+}
+
+
+.products-photo-frame img {
+    display: block;
+
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+
+/* green tape */
+
+.green-photo-tape {
+    position: absolute;
+
+    width: 80px;
+    height: 24px;
+
+    top: -12px;
+    left: 42%;
+
+    background: #AEBB91;
+
+    transform: rotate(-7deg);
+
+    z-index: 5;
+}
+
+
+/* striped tape */
+
+.striped-photo-tape,
+.polaroid-red-tape {
+    position: absolute;
+
+    width: 90px;
+    height: 25px;
+
+    top: -13px;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        rotate(4deg);
+
+    background-color: #F7F0E8;
+
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            #B84B4B 0,
+            #B84B4B 9px,
+            #FFF7EA 9px,
+            #FFF7EA 18px
+        );
+
+    z-index: 20;
+}
+
+
+/* ==========================================================
+   STRAWBERRY JAR
+   ========================================================== */
+
+.strawberry-jar {
+    width: 250px;
+
+    top: 610px;
+    right: -60px;
+
+    transform: rotate(8deg);
+
+    z-index: 15;
+}
+
+
+/* ==========================================================
+   THREE MAIN PHOTOS
+   ========================================================== */
+
+.main-hair-photos {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    z-index: 12;
+}
+
+
+.hair-polaroid {
+    position: relative;
+
+    width: 235px;
+
+    padding:
+        11px 11px
+        48px;
+
+    background: #FFF9ED;
+
+    border: 1px solid #B78B74;
+
+    box-shadow:
+        5px 7px 0
+        rgba(77,45,34,.25);
+}
+
+
+.hair-polaroid img {
+    display: block;
+
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+}
+
+
+.hair-polaroid p {
+    position: absolute;
+
+    left: 4px;
+    right: 4px;
+    bottom: 8px;
+
+    margin: 0;
+
+    text-align: center;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 12px;
+
+    color: #5D352A;
+}
+
+
+.before-wash-card {
+    transform: rotate(-5deg);
+}
+
+
+.after-card-one {
+    transform: rotate(1deg);
+
+    z-index: 14;
+}
+
+
+.after-card-two {
+    transform: rotate(5deg);
+}
+
+
+.polaroid-green-tape {
+    position: absolute;
+
+    width: 90px;
+    height: 25px;
+
+    top: -13px;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        rotate(-4deg);
+
+    background: #AEBB91;
+
+    z-index: 20;
+}
+
+
+.journey-flower {
+    width: 300px;
+
+    left: -110px;
+    bottom: 15px;
+
+    transform: rotate(-15deg);
+
+    z-index: 15;
+}
+
+
+/* ==========================================================
+   DOLLS
+   ========================================================== */
+
+/* medium / small doll */
+
+.doll-small {
+    width: 260px;
+
+    top: 1050px;
+    left: -55px;
+
+    transform: rotate(-5deg);
+
+    z-index: 25;
+}
+
+
+/* BIG doll */
+
+.doll-big {
+    width: 520px;
+
+    bottom: 310px;
+    right: -175px;
+
+    transform: rotate(3deg);
+
+    z-index: 24;
+}
+
+
+/* ==========================================================
+   THINGS I LOVE
+   ========================================================== */
+
+.things-love-section {
+    position: relative;
+
+    z-index: 20;
+
+    min-height: 850px;
+
+    padding:
+        70px 0
+        210px;
+}
+
+
+.things-love-card {
+    width: 68%;
+
+    margin: 0 auto;
+
+    padding:
+        45px 55px;
+
+    position: relative;
+
+    background: #FFF5ED;
+
+    border: 2px solid #B74B4B;
+
+    border-radius: 20px;
+
+    box-shadow:
+        7px 8px 0 #DDE3C7;
+
+    transform: rotate(-1deg);
+
+    z-index: 10;
+}
+
+
+.things-love-card h2 {
+    margin-top: 0;
+
+    text-align: center;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 34px;
+
+    color: #7C3030;
+}
+
+
+.love-card-tape {
+    position: absolute;
+
+    width: 120px;
+    height: 30px;
+
+    top: -15px;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        rotate(3deg);
+
+    background-color: #F7F0E8;
+
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            #B84B4B 0,
+            #B84B4B 10px,
+            #FFF7EA 10px,
+            #FFF7EA 20px
+        );
+}
+
+
+.interest {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin: 28px 0;
+}
+
+
+.interest > span {
+    min-width: 35px;
+
+    font-size: 27px;
+}
+
+
+.interest h3 {
+    margin: 0 0 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: #85583E;
+}
+
+
+.interest p {
+    margin: 0;
+
+    line-height: 1.6;
+
+    color: #4D2D22;
+}
+
+
+/* ==========================================================
+   BOTTOM MESSAGE
+   ========================================================== */
+
+.bottom-strawberry-message {
+    width: fit-content;
+
+    margin: 75px auto 0;
+
+    padding: 12px 28px;
+
+    position: relative;
+
+    background: #DDE3C7;
+
+    color: #6D2929;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-weight: bold;
+
+    box-shadow:
+        4px 5px 0 #AEBB91;
+
+    transform: rotate(2deg);
+
+    z-index: 30;
+}
+
+
+/* ==========================================================
+   BOTTOM DECORATIONS
+   ========================================================== */
+
+.bottom-doll {
+    width: 280px;
+
+    left: -45px;
+    bottom: 5px;
+
+    transform: rotate(-5deg);
+
+    z-index: 20;
+}
+
+
+.bottom-strawberries {
+    width: 500px;
+
+    right: -140px;
+    bottom: -45px;
+
+    transform: rotate(8deg);
+
+    z-index: 17;
+}
+
+
+.bottom-red-flower {
+    width: 240px;
+
+    right: 45px;
+    bottom: 165px;
+
+    transform: rotate(15deg);
+
+    z-index: 21;
+}
+
+
+.bottom-jar {
+    width: 200px;
+
+    left: 190px;
+    bottom: 30px;
+
+    transform: rotate(-7deg);
+
+    z-index: 22;
+}
+
+
+.bottom-star {
+    width: 120px;
+
+    right: 280px;
+    bottom: 50px;
+
+    transform: rotate(12deg);
+
+    z-index: 22;
+}
+
+
+.bottom-clip {
+    width: 200px;
+
+    right: -25px;
+    bottom: 330px;
+
+    transform: rotate(18deg);
+
+    z-index: 18;
+}
+
+
+.bottom-striped-tape {
+    position: absolute;
+
+    width: 200px;
+    height: 40px;
+
+    left: 37%;
+    bottom: 85px;
+
+    background-color: #FFF7EA;
+
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            #B84B4B 0,
+            #B84B4B 12px,
+            #FFF7EA 12px,
+            #FFF7EA 24px
+        );
+
+    transform: rotate(-5deg);
+
+    opacity: .95;
+
+    z-index: 19;
+}
+
+
+.bottom-green-tape {
+    position: absolute;
+
+    width: 160px;
+    height: 36px;
+
+    right: 23%;
+    bottom: 215px;
+
+    background: #AEBB91;
+
+    transform: rotate(8deg);
+
+    opacity: .95;
+
+    z-index: 19;
+}
+
+
+.bottom-heart-one {
+    position: absolute;
+
+    left: 32%;
+    bottom: 205px;
+
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    color: #B84B4B;
+
+    transform: rotate(-10deg);
+
+    z-index: 25;
+}
+
+
+.bottom-heart-two {
+    position: absolute;
+
+    right: 32%;
+    bottom: 20px;
+
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    color: #85583E;
+
+    transform: rotate(9deg);
+
+    z-index: 25;
+}
+
+
+/* existing cake */
+
+.bottom-cake {
+    width: 230px;
+
+    left: -20px;
+    bottom: 250px;
+
+    transform: rotate(-8deg);
+
+    z-index: 15;
+}
+
+
+/* existing kiss */
+
+.bottom-kiss {
+    width: 170px;
+
+    right: 30px;
+    top: 20px;
+
+    transform: rotate(12deg);
+
+    z-index: 15;
+}
+
+
+/* ==========================================================
+   PHONE VERSION
+   ========================================================== */
+
+@media (max-width: 700px) {
+
+    .about-page {
+        margin: 20px 12px 55px;
+
+        padding:
+            70px 18px
+            75px;
+    }
+
+
+    /* TITLE */
+
+    .about-title-box {
+        width: 440px;
+        height: 200px;
+
+        max-width: 100%;
+    }
+
+
+    .title-frame-image {
+        width: 470px;
+        height: 215px;
+
+        transform:
+            translate(-50%, -50%)
+            scale(1.1);
+    }
+
+
+    .about-title-box h1 {
+        font-size: 39px;
+    }
+
+
+    .about-subtitle {
+        font-size: 14px;
+    }
+
+
+    /* TOP DECORATIONS */
+
+    .about-red-bow {
+        width: 370px;
+
+        top: 0;
+        right: -145px;
+    }
+
+
+    .strawberry-branch {
+        width: 310px;
+
+        top: 125px;
+        left: -120px;
+    }
+
+
+    .about-paperclip {
+        width: 180px;
+
+        right: -65px;
+        top: 300px;
+    }
+
+
+    .about-star {
+        width: 90px;
+
+        right: 10px;
+    }
+
+
+    /* INTRO */
+
+    .about-intro-section {
+        min-height: 420px;
+    }
+
+
+    .about-intro-card {
+        width: 88%;
+
+        padding:
+            35px 25px;
+    }
+
+
+    .about-intro-card h2 {
+        font-size: 25px;
+    }
+
+
+    .about-intro-card p {
+        font-size: 15px;
+    }
+
+
+    .little-cake {
+        width: 130px;
+
+        left: -25px;
+    }
+
+
+    .kiss-mark {
+        width: 95px;
+
+        right: -10px;
+    }
+
+
+    .intro-flower {
+        width: 155px;
+
+        right: -55px;
+    }
+
+
+    /* HAIR JOURNEY */
+
+    .hair-journey-section {
+        margin-left: -8px;
+        margin-right: -8px;
+
+        padding:
+            70px 12px
+            105px;
+    }
+
+
+    .journey-paper-title {
+        padding: 12px 16px;
+
+        gap: 7px;
+    }
+
+
+    .journey-paper-title h2 {
+        font-size: 26px;
+    }
+
+
+    .journey-subtitle {
+        font-size: 14px;
+    }
+
+
+    /* TOP TWO PHOTOS */
+
+    .journey-top-row {
+        gap: 25px;
+
+        margin-bottom: 80px;
+    }
+
+
+    .mini-photo-frame {
+        width: 115px;
+    }
+
+
+    .mini-photo-frame img {
+        height: 105px;
+    }
+
+
+    .products-photo-frame {
+        width: 165px;
+    }
+
+
+    .products-photo-frame img {
+        height: 145px;
+    }
+
+
+    .journey-item p {
+        max-width: 160px;
+
+        font-size: 11px;
+    }
+
+
+    /* MAIN THREE */
+
+    .main-hair-photos {
+        gap: 0;
+    }
+
+
+    .hair-polaroid {
+        width: 108px;
+
+        padding:
+            6px 6px
+            40px;
+    }
+
+
+    .hair-polaroid img {
+        height: 155px;
+    }
+
+
+    .hair-polaroid p {
+        font-size: 9px;
+    }
+
+
+    /* JAR */
+
+    .strawberry-jar {
+        width: 145px;
+
+        right: -65px;
+        top: 550px;
+    }
+
+
+    /* DOLLS */
+
+    .doll-small {
+        width: 155px;
+
+        left: -55px;
+        top: 930px;
+    }
+
+
+    .doll-big {
+        width: 320px;
+
+        right: -135px;
+        bottom: 400px;
+    }
+
+
+    /* FLOWER */
+
+    .journey-flower {
+        width: 195px;
+
+        left: -90px;
+    }
+
+
+    /* SCRAPS */
+
+    .stripe-one {
+        width: 400px;
+
+        left: -185px;
+    }
+
+
+    .stripe-two {
+        width: 430px;
+
+        right: -195px;
+    }
+
+
+    /* THINGS I LOVE */
+
+    .things-love-section {
+        min-height: 800px;
+
+        padding-bottom: 200px;
+    }
+
+
+    .things-love-card {
+        width: 88%;
+
+        padding:
+            38px 25px;
+    }
+
+
+    .things-love-card h2 {
+        font-size: 28px;
+    }
+
+
+    .interest p {
+        font-size: 14px;
+    }
+
+
+    /* BOTTOM DECORATIONS */
+
+    .bottom-doll {
+        width: 175px;
+
+        left: -60px;
+        bottom: 5px;
+    }
+
+
+    .bottom-strawberries {
+        width: 310px;
+
+        right: -130px;
+        bottom: -25px;
+    }
+
+
+    .bottom-red-flower {
+        width: 150px;
+
+        right: -15px;
+        bottom: 160px;
+    }
+
+
+    .bottom-jar {
+        width: 120px;
+
+        left: 85px;
+        bottom: 25px;
+    }
+
+
+    .bottom-star {
+        width: 75px;
+
+        right: 105px;
+        bottom: 55px;
+    }
+
+
+    .bottom-clip {
+        width: 130px;
+
+        right: -45px;
+        bottom: 295px;
+    }
+
+
+    .bottom-striped-tape {
+        width: 115px;
+        height: 28px;
+
+        left: 38%;
+        bottom: 115px;
+    }
+
+
+    .bottom-green-tape {
+        width: 95px;
+        height: 26px;
+
+        right: 20%;
+        bottom: 220px;
+    }
+
+
+    .bottom-heart-one {
+        left: 27%;
+        bottom: 215px;
+
+        font-size: 37px;
+    }
+
+
+    .bottom-heart-two {
+        right: 27%;
+        bottom: 15px;
+
+        font-size: 34px;
+    }
+
+
+    .bottom-cake {
+        width: 145px;
+
+        left: -45px;
+        bottom: 260px;
+    }
+
+
+    .bottom-kiss {
+        width: 105px;
+
+        right: -10px;
+    }
+
+
+    .bottom-strawberry-message {
+        font-size: 13px;
+
+        padding: 10px 16px;
+    }
+}
