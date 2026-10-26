@@ -4792,15 +4792,14 @@ nav a:hover {
     }
 }
 /* ==========================================
-   HUGE ABOUT ME TITLE FRAME
-   Frame is about 2X bigger than the title
+   SUPER HUGE ABOUT ME TITLE FRAME
    ========================================== */
 
 .about-title-box {
     width: 100% !important;
-    height: 520px !important;
+    height: 650px !important;
 
-    margin: -70px auto -65px !important;
+    margin: -130px auto -120px !important;
 
     position: relative !important;
 
@@ -4812,13 +4811,13 @@ nav a:hover {
 }
 
 
-/* HUGE FRAME */
+/* FRAME — TWICE AS LARGE */
 
 .title-frame-image {
     position: absolute !important;
 
-    width: 1350px !important;
-    height: 650px !important;
+    width: 2600px !important;
+    height: 1200px !important;
 
     max-width: none !important;
 
@@ -4833,7 +4832,7 @@ nav a:hover {
 }
 
 
-/* KEEP TITLE MUCH SMALLER THAN FRAME */
+/* KEEP "ABOUT ME" SMALL */
 
 .about-title-box h1 {
     position: relative !important;
@@ -4849,24 +4848,24 @@ nav a:hover {
 
 
 /* ==========================================
-   PHONE
+   PHONE / SMALL SCREEN
    ========================================== */
 
 @media (max-width: 700px) {
 
     .about-title-box {
         width: 100% !important;
-        height: 360px !important;
+        height: 470px !important;
 
-        margin: -50px auto -45px !important;
+        margin: -90px auto -85px !important;
 
         overflow: visible !important;
     }
 
 
     .title-frame-image {
-        width: 780px !important;
-        height: 440px !important;
+        width: 1500px !important;
+        height: 850px !important;
 
         max-width: none !important;
 
