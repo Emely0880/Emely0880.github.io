@@ -987,4 +987,109 @@ nav a:hover {
     }
 }
 
+/* BIGGER SCRAPBOOK DECORATIONS */
+
+.paperclip {
+    width: 95px;
+}
+
+.top-bow {
+    width: 175px;
+}
+
+.white-flower {
+    width: 130px;
+}
+
+.paper-scrap {
+    width: 145px;
+}
+
+.scrap-one {
+    width: 155px;
+}
+
+.scrap-two {
+    width: 145px;
+}
+
+.scrap-three {
+    width: 160px;
+}
+
+.scrap-four {
+    width: 150px;
+}
+
+.scrap-five {
+    width: 170px;
+}
+
+.pink-long-flower {
+    width: 145px;
+}
+
+.falling-flowers {
+    width: 145px;
+}
+
+.photo-real-flower {
+    width: 75px !important;
+    height: 75px !important;
+}
+
+
+/* BIGGER ON PHONE TOO */
+
+@media (max-width: 700px) {
+
+    .paperclip {
+        width: 70px;
+    }
+
+    .top-bow {
+        width: 115px;
+    }
+
+    .white-flower {
+        width: 90px;
+    }
+
+    .paper-scrap {
+        width: 105px;
+    }
+
+    .scrap-one {
+        width: 115px;
+    }
+
+    .scrap-two {
+        width: 105px;
+    }
+
+    .scrap-three {
+        width: 115px;
+    }
+
+    .scrap-four {
+        width: 110px;
+    }
+
+    .scrap-five {
+        width: 125px;
+    }
+
+    .pink-long-flower {
+        width: 95px;
+    }
+
+    .falling-flowers {
+        width: 100px;
+    }
+
+    .photo-real-flower {
+        width: 55px !important;
+        height: 55px !important;
+    }
+}
    
