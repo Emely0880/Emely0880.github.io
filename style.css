@@ -341,3 +341,21 @@ h1 {
     transform: translateX(-50%) rotate(-3deg);
     border: 1px solid rgba(133, 88, 62, 0.25);
 }
+.hair-display img {
+    position: relative;
+}
+.hair-display {
+    position: relative;
+}
+.hair-display::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 16px;
+    background-color: var(--soft-pink);
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(5deg);
+    z-index: 5;
+    opacity: 0.85;
+}
