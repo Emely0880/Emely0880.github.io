@@ -1776,3 +1776,34 @@ nav a:hover {
     }
 }
 
+/* 0657 WHITE FLOWER — lower + lying across photo area */
+.white-flower {
+    width: 430px !important;
+    max-width: none !important;
+
+    top: 610px !important;
+    right: 40px !important;
+
+    transform: rotate(72deg) !important;
+    transform-origin: center !important;
+
+    z-index: 19 !important;
+
+    object-fit: contain !important;
+    pointer-events: none !important;
+}
+
+
+/* Phone / iPad size */
+@media (max-width: 700px) {
+    .white-flower {
+        width: 270px !important;
+
+        top: 555px !important;
+        right: -5px !important;
+
+        transform: rotate(72deg) !important;
+
+        z-index: 19 !important;
+    }
+}
