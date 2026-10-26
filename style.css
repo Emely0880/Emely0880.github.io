@@ -359,3 +359,48 @@ h1 {
     z-index: 5;
     opacity: 0.85;
 }
+.hair-decor {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.hair-decor span {
+    position: absolute;
+    display: block;
+}
+
+/* Flower */
+.hair-decor .flower {
+    color: var(--sage-green);
+    font-size: 30px;
+    top: 5px;
+    left: 28%;
+    transform: rotate(-15deg);
+}
+
+/* Heart */
+.hair-decor .heart {
+    color: var(--dusty-pink);
+    font-size: 35px;
+    right: 27%;
+    top: 20px;
+    transform: rotate(12deg);
+}
+
+/* Bow */
+.hair-decor .bow {
+    font-size: 30px;
+    right: 18%;
+    bottom: 5px;
+    transform: rotate(8deg);
+}
+
+/* Curly line */
+.hair-decor .curl {
+    color: var(--caramel);
+    font-size: 38px;
+    left: 19%;
+    bottom: 8px;
+    transform: rotate(-12deg);
+}
