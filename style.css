@@ -1,4 +1,4 @@
-:root {
+i:root {
     --cream: #FFF7EA;
     --paper: #FFF9ED;
     --soft-pink: #F3C6CE;
@@ -4878,5 +4878,219 @@ nav a:hover {
 
     .about-title-box h1 {
         font-size: 40px !important;
+    }
+}
+/* ==========================================================
+   SIMPLE CLEAN ABOUT ME BOTTOM
+   ========================================================== */
+
+
+/* HIDE THE OLD CROWDED BOTTOM DECORATIONS */
+
+.bottom-doll,
+.bottom-strawberries,
+.bottom-red-flower,
+.bottom-star,
+.bottom-jar,
+.bottom-clip,
+.bottom-striped-tape,
+.bottom-green-tape,
+.bottom-heart-one,
+.bottom-heart-two,
+.bottom-cake,
+.bottom-kiss {
+    display: none !important;
+}
+
+
+/* Give the bottom enough room without making it enormous */
+
+.things-love-section {
+    min-height: 720px !important;
+    padding-bottom: 260px !important;
+    position: relative !important;
+}
+
+
+/* ==========================================
+   DOLL 1 — MEDIUM/LARGE BOTTOM LEFT
+   ========================================== */
+
+.simple-bottom-doll {
+    display: block !important;
+
+    width: 350px !important;
+    max-width: none !important;
+
+    left: -45px !important;
+    bottom: -20px !important;
+
+    transform: rotate(-3deg) !important;
+
+    z-index: 22 !important;
+}
+
+
+/* ==========================================
+   CENTER SCRAPBOOK NOTE
+   ========================================== */
+
+.bottom-curl-note {
+    position: absolute;
+
+    width: 330px;
+
+    left: 54%;
+    bottom: 70px;
+
+    transform:
+        translateX(-50%)
+        rotate(2deg);
+
+    padding: 38px 30px 32px;
+
+    background: #FFF5ED;
+
+    border: 2px solid #D98F9D;
+
+    box-shadow:
+        7px 8px 0 #AEBB91;
+
+    text-align: center;
+
+    z-index: 20;
+}
+
+
+/* little tape on top */
+
+.bottom-note-tape {
+    position: absolute;
+
+    width: 110px;
+    height: 28px;
+
+    top: -15px;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        rotate(-4deg);
+
+    background: #AEBB91;
+
+    opacity: .9;
+}
+
+
+/* quote */
+
+.bottom-curl-note p {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 23px;
+
+    font-style: italic;
+    font-weight: bold;
+
+    color: #7C3030;
+
+    line-height: 1.4;
+}
+
+
+/* heart */
+
+.note-heart {
+    position: absolute;
+
+    left: 18px;
+    top: 12px;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    color: #B84B4B;
+}
+
+
+/* strawberry */
+
+.note-strawberry {
+    display: block;
+
+    margin-top: 13px;
+
+    font-size: 25px;
+}
+
+
+/* Keep the existing Embrace Every Curl message */
+
+.bottom-strawberry-message {
+    margin-top: 65px !important;
+
+    position: relative !important;
+
+    z-index: 30 !important;
+}
+
+
+/* ==========================================
+   PHONE
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    .things-love-section {
+        min-height: 700px !important;
+        padding-bottom: 260px !important;
+    }
+
+
+    .simple-bottom-doll {
+        width: 230px !important;
+
+        left: -65px !important;
+        bottom: -10px !important;
+    }
+
+
+    .bottom-curl-note {
+        width: 190px;
+
+        left: 65%;
+        bottom: 65px;
+
+        padding:
+            30px 17px
+            24px;
+    }
+
+
+    .bottom-curl-note p {
+        font-size: 17px;
+    }
+
+
+    .bottom-note-tape {
+        width: 75px;
+        height: 22px;
+    }
+
+
+    .note-heart {
+        font-size: 23px;
+    }
+
+
+    .note-strawberry {
+        font-size: 20px;
     }
 }
