@@ -6239,3 +6239,19 @@ nav a:hover {
         bottom: 45px;
     }
 }
+/* BIGGER CAMERA ONLY */
+
+.links-camera {
+    width: 900px !important;
+    max-width: none !important;
+}
+
+
+/* PHONE */
+
+@media (max-width: 700px) {
+    .links-camera {
+        width: 590px !important;
+        max-width: none !important;
+    }
+}
