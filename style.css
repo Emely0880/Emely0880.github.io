@@ -6238,31 +6238,45 @@ nav a:hover {
         right: -20px;
         bottom: 45px;
     }
-/* CAMERA ONLY — SMALLER + LOWER + HORIZONTAL */
+/* ==========================================
+   CAMERA ONLY
+   LARGE + SIDEWAYS + LOWER
+   ========================================== */
 
 .links-camera {
-    width: 1500px !important;
+    width: 1900px !important;
     max-width: none !important;
 
-    bottom: -130px !important;
+    left: 50% !important;
+    bottom: -230px !important;
 
     transform:
         translateX(-50%)
-        rotate(90deg) !important;
+        rotate(-90deg) !important;
+
+    transform-origin: center center !important;
+
+    object-fit: contain !important;
+
+    z-index: 10 !important;
 }
 
 
-/* PHONE */
+/* PHONE / SMALL SCREEN */
 
 @media (max-width: 700px) {
+
     .links-camera {
-        width: 950px !important;
+        width: 1250px !important;
         max-width: none !important;
 
-        bottom: -95px !important;
+        left: 50% !important;
+        bottom: -155px !important;
 
         transform:
             translateX(-50%)
-            rotate(90deg) !important;
+            rotate(-90deg) !important;
+
+        transform-origin: center center !important;
     }
 }
